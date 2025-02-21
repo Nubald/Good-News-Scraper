@@ -1,0 +1,1002 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>ThatOneGuy's Elemental PvP Class</FightClassName>
+    <Range>35</Range>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>trinket = "no"
+cc = {
+"Cyclone",
+"Blind",
+"Death Coil",
+"Freezing Arrow Effect",
+"Psychic Scream",
+"Fear",
+"Howl of Terror",
+"Intimidating Shout",
+"Mind Control",
+"Hex",
+"Dragon's Breath",
+}
+for i=1, #cc do
+	if UnitDebuff("player",cc[i])
+	then
+	local _, _, _, _, _, _, enddebuff = UnitDebuff("player",cc[i])
+		if (enddebuff - GetTime()) &gt;= 4
+		then
+		trinket = "yes"
+		end
+	end
+end</LuaScript>
+            <VarRet>trinket</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- Trinket CC
+if UnitFactionGroup("player") == "Alliance"
+then
+	if UnitRace("player") == "Human"
+	and GetSpellCooldown("Every Man for Himself") == 0
+	then
+	CastSpellByName("Every Man for Himself")
+	else
+		if GetItemCooldown("Medallion of the Alliance") == 0
+		then
+		UseItemByName("Medallion of the Alliance")
+		end
+	end
+elseif UnitFactionGroup("player") == "Horde"
+then
+	if GetItemCooldown("Medallion of the Horde") == 0
+	then
+	UseItemByName("Medallion of the Horde")
+	end
+end</SpellName>
+      <Priority>32</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <DescriptionSpell>Trinket</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>purge = "no"
+if UnitBuff("target","Presence of Mind") 
+or UnitBuff("target","Arcane Power") 
+or UnitBuff("target","Power Word: Shield") 
+or UnitBuff("target","Power Infusion")
+or UnitBuff("target","Hand of Protection")
+or UnitBuff("target","Sacred Shield")
+or UnitBuff("target","Barkskin")
+or UnitBuff("target","Nature's Swiftness")
+or UnitBuff("target","Elemental Mastery")
+or UnitBuff("target","Heroism")
+or UnitBuff("target","Bloodlust")
+or UnitBuff("target","Hand of Freedom")
+then 
+purge = "yes" 
+end</LuaScript>
+            <VarRet>purge</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Purge</SpellName>
+      <Priority>31</Priority>
+      <DescriptionSpell>High Value Purge Buffs</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>28</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frost Shock</SpellName>
+      <Priority>30</Priority>
+      <DescriptionSpell>Stop Runaway</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mana Spring</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>InBattleground</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Call of the Elements</SpellName>
+      <Priority>29</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>SsT, ToW, MsT, WoaT</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Lava Flows</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lesser Healing Wave</SpellName>
+      <Priority>28</Priority>
+      <DescriptionSpell>In Combat Heal - LavaFlows Buff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>95</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lesser Healing Wave</SpellName>
+      <Priority>27</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>80 - 95% NoCombat</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Wave</SpellName>
+      <Priority>26</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>&lt; 80% NoCombat</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>1</Number>
+            <Type>SmallerOrEqual</Type>
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lesser Healing Wave</SpellName>
+      <Priority>25</Priority>
+      <DescriptionSpell>&gt; 35% In Combat Heal</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetTargetingMe</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Grounding Totem</SpellName>
+      <Priority>24</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Don't Cast On Me!</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Spell Reflection</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Grounding Totem Effect</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Wind Shear</SpellName>
+      <Priority>23</Priority>
+      <DescriptionSpell>KICK!</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>12</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Thunderstorm</SpellName>
+      <Priority>22</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Kick?</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Elemental Mastery</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lava Burst</SpellName>
+      <Priority>21</Priority>
+      <DescriptionSpell> Elemental Mastery Burst</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Elemental Mastery</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Chain Lightning</SpellName>
+      <Priority>20</Priority>
+      <DescriptionSpell>Elemental Mastery Burst</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>SmallerOrEqual</Type>
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Elemental Mastery</SpellName>
+      <Priority>19</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Burst 75%</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>SmallerOrEqual</Type>
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Blood Fury</SpellName>
+      <Priority>18</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Burst 75%</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HostileUnitNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>SmallerOrEqual</Type>
+            <Radius>20</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>75</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mana Spring</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Fire Elemental Totem</SpellName>
+      <Priority>17</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Burst 75%</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>11</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Thunderstorm</SpellName>
+      <Priority>16</Priority>
+      <IsBuff>true</IsBuff>
+      <AOESpellMePos>true</AOESpellMePos>
+      <DescriptionSpell>Yeet</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetTargetingMe</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frost Shock</SpellName>
+      <Priority>15</Priority>
+      <Timer>7000</Timer>
+      <DescriptionSpell>Targeting me - SPOOKED</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>19</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frost Shock</SpellName>
+      <Priority>14</Priority>
+      <DescriptionSpell>Target On mY sHiT</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stoneclaw Totem</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>90</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetTargetingMe</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Stoneclaw Totem</SpellName>
+      <Priority>13</Priority>
+      <IsBuff>true</IsBuff>
+      <DescriptionSpell>Shield</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>dispel = "no"
+dispelspell = "Tremor Totem"
+
+ccs = {
+"Fear",
+"Howl of Terror",
+"Psychic Scream",
+"Seduction",
+}
+
+for i=1, GetNumRaidMembers() do
+	for j=1, #ccs do
+		if UnitExists("raid"..i)
+		and UnitDebuff("raid"..i,ccs[j])
+		and not UnitIsUnit("raid"..i,"player")
+		then
+		dispel = "yes"
+		dispeltarget = "raid"..i
+		print("|cFF25DCE0Dispel Friends:|r Dispelling "..ccs[j].." from "..UnitName("raid"..i))
+
+		end
+	end
+end</LuaScript>
+            <VarRet>dispel</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>70</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- Dispel CC (Friends)
+CastSpellByName(dispelspell,dispeltarget)</SpellName>
+      <Priority>12</Priority>
+      <IsBuff>true</IsBuff>
+      <AddToSettings>true</AddToSettings>
+      <AddToSettingsActiveByDefault>true</AddToSettingsActiveByDefault>
+      <AddToSettingsName>Dispel CC to Friends</AddToSettingsName>
+      <Timer>3000</Timer>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Flame Shock</SpellName>
+      <Priority>11</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Totem of Wrath</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Fire Nova</SpellName>
+      <Priority>9</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lava Burst</SpellName>
+      <Priority>8</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Anti-Magic Shell")
+or UnitBuff("target","Cloak of Shadows")
+or UnitBuff("target","Spell Reflection")
+or UnitBuff("target","Grounding Totem Effect")
+then 
+immune = "yes" 
+end</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Chain Lightning</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>immune = "no"
+if UnitBuff("target","Divine Shield") 
+or UnitBuff("target","Ice Block") 
+or UnitBuff("target","Deterrence") 
+or UnitBuff("target","Hand of Protection")
+or UnitBuff("target","Dispersion")
+then 
+immune = "yes" 
+end
+</LuaScript>
+            <VarRet>immune</VarRet>
+            <ValueRet>no</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lightning Bolt</SpellName>
+      <Priority>6</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>12</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Earthbind Totem</SpellName>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Ghost Wolf</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ghost Wolf</SpellName>
+      <Priority>4</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Flametongue Weapon</SpellName>
+      <Priority>3</Priority>
+      <IsBuff>true</IsBuff>
+      <Timer>900000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Water Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Water Shield</SpellName>
+      <Priority>2</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Water Walking</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Water Walking</SpellName>
+      <Priority>1</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wManagerGlobalSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <WRobotFileName />
+  <WRobotTmpFolderName />
+  <DriveLetter />
+  <FullWowPath>C:\Program Files (x86)\World of Warcraft\</FullWowPath>
+  <MaxFPS>30</MaxFPS>
+  <MaxLuaMemoryUsage>2147483647</MaxLuaMemoryUsage>
+  <CloseIfCannotLoginWowMinutes>2</CloseIfCannotLoginWowMinutes>
+  <WaitTimeToRelogSeconds>0</WaitTimeToRelogSeconds>
+  <CloseGameIfAdminRights>false</CloseGameIfAdminRights>
+  <HideLuaError>false</HideLuaError>
+  <UseShortcuts>true</UseShortcuts>
+  <WindowName />
+  <TopMost>false</TopMost>
+  <Remote>false</Remote>
+  <ToTrayBar>false</ToTrayBar>
+  <DarkMode>true</DarkMode>
+  <BotNameUI>WRobot</BotNameUI>
+  <MeShow>true</MeShow>
+  <TargetShow>true</TargetShow>
+  <PathShow>true</PathShow>
+  <BlacklistShow>true</BlacklistShow>
+  <NpcShow>false</NpcShow>
+  <PlayersShow>false</PlayersShow>
+  <ObjectsShow>false</ObjectsShow>
+  <LowFps>true</LowFps>
+  <LowQuality>true</LowQuality>
+  <ByName />
+</wManagerGlobalSetting>

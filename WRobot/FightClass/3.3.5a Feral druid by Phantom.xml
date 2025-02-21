@@ -1,0 +1,977 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>feral druid</FightClassName>
+    <FramePerSecond>30</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Innervate</SpellName>
+      <Priority>42</Priority>
+      <CombatOnly>false</CombatOnly>
+      <Timer>180000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mark of the Wild</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mark of the Wild</SpellName>
+      <Priority>41</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Thorns</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Thorns</SpellName>
+      <Priority>40</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>3</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>100</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Bear Form</SpellName>
+      <Priority>39</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>3</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>100</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Dire Bear Form</SpellName>
+      <Priority>38</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Frenzied Regeneration</SpellName>
+      <Priority>37</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Survival Instincts</SpellName>
+      <Priority>36</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Survival Instincts</SpellName>
+      <Priority>35</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Enrage</SpellName>
+      <Priority>34</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Enrage</SpellName>
+      <Priority>33</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Demoralizing Roar</SpellName>
+      <Priority>32</Priority>
+      <Timer>30000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Demoralizing Roar</SpellName>
+      <Priority>31</Priority>
+      <Timer>30000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>War Stomp</SpellName>
+      <Priority>30</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Bash</SpellName>
+      <Priority>29</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Bash</SpellName>
+      <Priority>28</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Swipe (Bear)</SpellName>
+      <Priority>27</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Swipe (Bear)</SpellName>
+      <Priority>26</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Maul</SpellName>
+      <Priority>25</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mangle (Bear)</SpellName>
+      <Priority>24</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Barkskin</SpellName>
+      <Priority>23</Priority>
+      <Timer>60000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Radius>100</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Barkskin</SpellName>
+      <Priority>22</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>Bigger</Type>
+            <Radius>10</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Berserk</SpellName>
+      <Priority>21</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetIsPlayer</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Berserk</SpellName>
+      <Priority>20</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Faerie Fire</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Faerie Fire (Feral)</SpellName>
+      <Priority>19</Priority>
+      <OncePerTarget>true</OncePerTarget>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Savage Roar</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>3</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Savage Roar</SpellName>
+      <Priority>18</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Tiger's Fury</SpellName>
+      <Priority>17</Priority>
+      <Timer>30000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>1</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Maim</SpellName>
+      <Priority>16</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>2</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rip</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rip</SpellName>
+      <Priority>15</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ferocious Bite</SpellName>
+      <Priority>14</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rake</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mangle (Cat)</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Claw</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Claw</SpellName>
+      <Priority>12</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rake</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rake</SpellName>
+      <Priority>11</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mangle (Cat)</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mangle (Cat)</SpellName>
+      <Priority>10</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>8</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Feral Charge - Cat</SpellName>
+      <Priority>9</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>SmallerOrEqual</Type>
+            <Radius>100</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cat Form</SpellName>
+      <Priority>8</Priority>
+      <IsBuff>true</IsBuff>
+      <CastIfMounted>true</CastIfMounted>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Predator's swiftness</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>70</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Regrowth</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Regrowth</SpellName>
+      <Priority>6</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Predator's swiftness</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>70</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Touch</SpellName>
+      <CombatOnly>false</CombatOnly>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Touch</SpellName>
+      <Priority>4</Priority>
+      <CombatOnly>false</CombatOnly>
+      <Timer>2500</Timer>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>90</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Frenzied Regeneration</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rejuvenation</SpellName>
+      <Priority>3</Priority>
+      <CombatOnly>false</CombatOnly>
+      <Timer>14000</Timer>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Curse of Thorns</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dire Bear Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Remove Curse</SpellName>
+      <Priority>2</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Slowing Poison</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Abolish Poison</SpellName>
+      <Priority>1</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

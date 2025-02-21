@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>All Specs Rogue PvE/PvP</FightClassName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <!-- Combat Spec Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Adrenaline Rush</SpellName>
+      <Priority>100</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBehind</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Backstab</SpellName>
+      <Priority>99</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>EnergyPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Blade Flurry</SpellName>
+      <Priority>98</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>needevasion = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") <= 0.3
+then
+needevasion = "yes"
+end</LuaScript>
+            <VarRet>needevasion</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Evasion</SpellName>
+      <Priority>97</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Feint</SpellName>
+      <Priority>96</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>needkick = "no"
+if UnitExists("target")
+and UnitCastingInfo("target")
+and not UnitBuff("target", "Spell Reflection")
+and not UnitBuff("target", "Grounding Totem Effect")
+then
+needkick = "yes"
+end</LuaScript>
+            <VarRet>needkick</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Gouge</SpellName>
+      <Priority>95</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Kick</SpellName>
+      <Priority>94</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Killing Spree</SpellName>
+      <Priority>93</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetParry</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Riposte</SpellName>
+      <Priority>92</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Shiv</SpellName>
+      <Priority>91</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>usesinister = "no"
+if UnitExists("target")
+and UnitAffectingCombat("player")
+and UnitPower("player") >= 45
+and not IsStealthed()
+then
+usesinister = "yes"
+end</LuaScript>
+            <VarRet>usesinister</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Sinister Strike</SpellName>
+      <Priority>90</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Sprint</SpellName>
+      <Priority>89</Priority>
+    </FightClassSpell>
+
+    <!-- Assassination Spec Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stealth</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ambush</SpellName>
+      <Priority>88</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stealth</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cheap Shot</SpellName>
+      <Priority>87</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cold Blood</SpellName>
+      <Priority>86</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Deadly Throw</SpellName>
+      <Priority>85</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Dismantle</SpellName>
+      <Priority>84</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoints</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>4</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Envenom</SpellName>
+      <Priority>83</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>useslice = "no"
+if UnitExists("target")
+and GetComboPoints("player", "target") >= 5
+and not UnitBuff("player", "Slice and Dice")
+then
+useslice = "yes"
+end</LuaScript>
+            <VarRet>useslice</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Eviscerate</SpellName>
+      <Priority>82</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Expose Armor</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Expose Armor</SpellName>
+      <Priority>81</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stealth</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Garrote</SpellName>
+      <Priority>80</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Hunger For Blood</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Hunger For Blood</SpellName>
+      <Priority>79</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoints</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>1</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Kidney Shot</SpellName>
+      <Priority>78</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>EnergyPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>45</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mutilate</SpellName>
+      <Priority>77</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoints</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rupture</SpellName>
+      <Priority>76</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoints</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Slice and Dice</SpellName>
+      <Priority>75</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <!-- Subtlety Spec Abilities -->
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Blind</SpellName>
+      <Priority>74</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cloak of Shadows</SpellName>
+      <Priority>73</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Ghostly Strike</SpellName>
+      <Priority>72</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>EnergyPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Hemorrhage</SpellName>
+      <Priority>71</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Premeditation</SpellName>
+      <Priority>70</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Preparation</SpellName>
+      <Priority>69</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stealth</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Sap</SpellName>
+      <Priority>68</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Dance</SpellName>
+      <Priority>67</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadowstep</SpellName>
+      <Priority>66</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>false</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Stealth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Stealth</SpellName>
+      <Priority>65</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Tricks of the Trade</SpellName>
+      <Priority>64</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vanish</SpellName>
+      <Priority>63</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

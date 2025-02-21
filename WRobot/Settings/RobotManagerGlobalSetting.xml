@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<robotManagerGlobalSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CanProtectAgainstScreenshots>false</CanProtectAgainstScreenshots>
+  <ArgsEnvironmentVariables>46405B</ArgsEnvironmentVariables>
+  <ForceStaticEncryptKey>0</ForceStaticEncryptKey>
+  <HowLongDaysKeepLogFiles>7</HowLongDaysKeepLogFiles>
+  <InstallDateTime>2025-02-08T17:05:45.2817105+00:00</InstallDateTime>
+  <ShowMs>true</ShowMs>
+  <normalCb>true</normalCb>
+  <fightCb>true</fightCb>
+  <navigatorCb>false</navigatorCb>
+  <debugCb>false</debugCb>
+  <ErrorCb>true</ErrorCb>
+  <SendErrorCb>false</SendErrorCb>
+</robotManagerGlobalSetting>

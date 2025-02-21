@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Feral DPS</FightClassName>
+    <Range>3</Range>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Clearcasting</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>IsBehind</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shred</SpellName>
+      <Priority>13</Priority>
+      <DescriptionSpell>Cast if Clearcasting and behind</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rip</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>BuffTimeLeftTarget</ContionType>
+          <Param xsi:type="FightClassConditionBuffStack">
+            <Number>9</Number>
+            <Type>BiggerOrEqual</Type>
+            <Name>Rip</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>BuffTimeLeft</ContionType>
+          <Param xsi:type="FightClassConditionBuffStack">
+            <Number>9</Number>
+            <Type>BiggerOrEqual</Type>
+            <Name>Savage Roar</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Savage Roar</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>2</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ferocious Bite</SpellName>
+      <Priority>12</Priority>
+      <DescriptionSpell>Use if SR and Rip are up and CP &gt;= 2</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Savage Roar</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>3</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Savage Roar</SpellName>
+      <Priority>11</Priority>
+      <DescriptionSpell>CP &gt;= 3 and no buff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HostileUnitNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>3</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Swipe (Cat)</SpellName>
+      <Priority>10</Priority>
+      <DescriptionSpell>Swipe if 2 mobs near target</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name> Rip</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rip</SpellName>
+      <Priority>9</Priority>
+      <DescriptionSpell>5 = CP and no debuff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mangle (Cat)</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mangle (Cat)</SpellName>
+      <Priority>8</Priority>
+      <DescriptionSpell>Use if no debuff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rake</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rake</SpellName>
+      <Priority>7</Priority>
+      <DescriptionSpell>Use if no debuff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Faerie Fire</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Faerie Fire (Feral)</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Faerie Fire (Feral)</SpellName>
+      <Priority>6</Priority>
+      <DescriptionSpell>Use if no debuff</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Tiger's Fury</SpellName>
+      <DescriptionSpell>Use on CD</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>BuffTimeLeft</ContionType>
+          <Param xsi:type="FightClassConditionBuffStack">
+            <Number>5</Number>
+            <Name>Savage Roar</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>3</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Savage Roar</SpellName>
+      <Priority>4</Priority>
+      <DescriptionSpell>Buff is running out and CP &gt;= 3</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsBehind</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shred</SpellName>
+      <Priority>3</Priority>
+      <DescriptionSpell>Cast to build CP</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Berserk</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsBoss</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Berserk</SpellName>
+      <Priority>2</Priority>
+      <DescriptionSpell>Use on CD on bosses</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>IsBehind</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Claw</SpellName>
+      <Priority>1</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

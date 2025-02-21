@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Fight config name</FightClassName>
+    <Range>30</Range>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Touch</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rejuvenation</SpellName>
+      <Priority>6</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Thorns</SpellName>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Mark of the Wild</SpellName>
+      <Priority>4</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>GlobalCooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>GlobalCooldownTimeLeft</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Value>9</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Moonfire</SpellName>
+      <Priority>3</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Wrath</SpellName>
+      <Priority>2</Priority>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Entangling Roots</SpellName>
+      <Priority>1</Priority>
+      <OncePerTarget>true</OncePerTarget>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

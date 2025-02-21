@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MageLevelSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ScanRange>80</ScanRange>
+  <LoSCreditsPlayers>5</LoSCreditsPlayers>
+  <LoSCreditsNPCs>10</LoSCreditsNPCs>
+  <TalentCodes />
+  <ChooseRotation>Mage_GroupFrost</ChooseRotation>
+  <Backpaddle>false</Backpaddle>
+  <UseWand>false</UseWand>
+  <GlyphOfEvocation>true</GlyphOfEvocation>
+  <GlyphOfEternalWater>true</GlyphOfEternalWater>
+  <SoloFrostUseAOE>true</SoloFrostUseAOE>
+  <GroupFrostUseAOE>true</GroupFrostUseAOE>
+  <GroupFrostAOEInstance>4</GroupFrostAOEInstance>
+  <SoloFireSheep>true</SoloFireSheep>
+  <SoloFireUseAOE>true</SoloFireUseAOE>
+  <SoloFireAOEInstance>4</SoloFireAOEInstance>
+  <GroupFireUseAOE>true</GroupFireUseAOE>
+  <GroupFireAOEInstance>4</GroupFireAOEInstance>
+</MageLevelSettings>

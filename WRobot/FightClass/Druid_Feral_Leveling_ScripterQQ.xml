@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>ScripterQQ Druid Feral Leveling</FightClassName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Thorns</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Thorns</SpellName>
+      <Priority>27</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mark of the Wild</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>85</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mark of the Wild</SpellName>
+      <Priority>26</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Innervate</SpellName>
+      <Priority>25</Priority>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>85</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Barkskin</SpellName>
+      <Priority>24</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>65</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Regrowth</SpellName>
+      <Priority>23</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <Timer>1500</Timer>
+      <DescriptionSpell>OOC Heal</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeLevel</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Touch</SpellName>
+      <Priority>22</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>Before Learning Regrowth</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Drink</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>BuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Regrowth</SpellName>
+      <Priority>21</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+      <DescriptionSpell>&lt; 40% HP, &lt; Lv 20</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>BuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rejuvenation</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rejuvenation</SpellName>
+      <Priority>20</Priority>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Predator's Swiftness</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>70</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>BuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Regrowth</SpellName>
+      <Priority>19</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>Predator's Swiftness</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Predator's Swiftness</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>70</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Healing Touch</SpellName>
+      <Priority>18</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>Predator's Swiftness</DescriptionSpell>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>shouldcat = "no"
+if not IsMounted()
+and not UnitBuff("player","Travel Form")
+and not UnitBuff("player","Flight Form")
+and not UnitBuff("player","Swift Flight Form")
+then
+shouldcat = "yes"
+end</LuaScript>
+            <VarRet>shouldcat</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>isenemy = "no"
+if UnitExists("target") and UnitCanAttack("player","target") then
+isenemy = "yes"
+end</LuaScript>
+            <VarRet>isenemy</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cat Form</SpellName>
+      <Priority>17</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>friendlytarget = "no"
+if UnitExists("target") and UnitSpeed("player") == 0 and not UnitCanAttack("player","target")
+then
+friendlytarget = "yes"
+end</LuaScript>
+            <VarRet>friendlytarget</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- Remove Shapeshifting for Fligh Master
+CancelUnitBuff("player","Cat Form")
+CancelUnitBuff("player","Travel Form")
+CancelUnitBuff("player","Flight Form")
+CancelUnitBuff("player","Swift Flight Form")</SpellName>
+      <Priority>16</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Regrowth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Survival Instincts</SpellName>
+      <Priority>15</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>9</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Feral Charge - Cat</SpellName>
+      <Priority>14</Priority>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Faerie Fire (Feral)</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeLevel</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Faerie Fire (Feral)</SpellName>
+      <Priority>13</Priority>
+      <CastIfMounted>true</CastIfMounted>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>6</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeLevel</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>51</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Tiger's Fury</SpellName>
+      <Priority>12</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>Before Talent (Lv 51)</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>6</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Energy</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Tiger's Fury</SpellName>
+      <Priority>11</Priority>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <DescriptionSpell>Energy &lt; 40</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>6</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>8</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>IsSpellUsable</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Tiger's Fury</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Berserk</SpellName>
+      <Priority>10</Priority>
+      <DescriptionSpell>2+ Enemies Attacking</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rake</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rake</SpellName>
+      <Priority>9</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rip</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>2</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>lowrip = "no"
+if UnitLevel("target") - UnitLevel("player") &lt; 2
+then
+lowrip = "yes"
+end
+</LuaScript>
+            <VarRet>lowrip</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Savage Roar</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rip</SpellName>
+      <Priority>8</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <DescriptionSpell>2+ CP, Target Low Level</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>4</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Rip</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rip</SpellName>
+      <Priority>7</Priority>
+      <CombatOnly>false</CombatOnly>
+      <DescriptionSpell>4+ CP</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>3</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ferocious Bite</SpellName>
+      <Priority>6</Priority>
+      <DescriptionSpell>3 CP, Target 30% HP</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>4</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ferocious Bite</SpellName>
+      <DescriptionSpell>4 CP</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mangle (Cat)</SpellName>
+      <Priority>4</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ComboPoint</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>5</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mangle (Cat)</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Claw</SpellName>
+      <Priority>3</Priority>
+      <DescriptionSpell>Before Learning Mangle</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Moonfire</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Moonfire</SpellName>
+      <Priority>2</Priority>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <DescriptionSpell>Before Feral Spec</DescriptionSpell>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>KnowSpell</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cat Form</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Wrath</SpellName>
+      <Priority>1</Priority>
+      <DescriptionSpell>Before Feral Spec</DescriptionSpell>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Prot warr 3.3.5a</FightClassName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Charge</SpellName>
+      <Priority>20</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <Timer>15000</Timer>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Battle Stance</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Retaliation</SpellName>
+      <Priority>19</Priority>
+      <IsBuff>true</IsBuff>
+      <Timer>240000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Battle Stance</SpellName>
+      <Priority>18</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>8</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Defensive Stance</SpellName>
+      <Priority>17</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetCastingTimeLeft</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>1</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Spell Reflection</SpellName>
+      <Priority>16</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bloodrage</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Bloodrage</SpellName>
+      <Priority>15</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Berserker Rage</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Berserker Rage</SpellName>
+      <Priority>14</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Battle Shout</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Battle Shout</SpellName>
+      <Priority>13</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Shield Block</SpellName>
+      <Priority>12</Priority>
+      <Timer>40000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shield Slam</SpellName>
+      <Priority>11</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Revenge</SpellName>
+      <Priority>10</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shockwave</SpellName>
+      <Priority>9</Priority>
+      <Timer>20000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetIsStunned</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Concussion Blow</SpellName>
+      <Priority>8</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>1</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetIsStunned</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Thunder Clap</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetCastingTimeLeft</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>1</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shield Bash</SpellName>
+      <Priority>6</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>12</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Devastate</SpellName>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shield Wall</SpellName>
+      <Priority>4</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Last Stand</SpellName>
+      <Priority>3</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNear</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>2</Number>
+            <Type>BiggerOrEqual</Type>
+            <Radius>5</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cleave</SpellName>
+      <Priority>2</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>1</Number>
+            <Radius>5</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Rage</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Heroic Strike</SpellName>
+      <Priority>1</Priority>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>All Specs Rogue PvE/PvP</FightClassName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <!-- Stealth and Openers -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[stealth = "no"
+if not UnitAffectingCombat("player") 
+and not IsStealthed()
+then 
+stealth = "yes"
+end]]></LuaScript>
+            <VarRet>stealth</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Stealth</SpellName>
+      <Priority>100</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[ambush = "no"
+if IsStealthed()
+and UnitExists("target")
+then
+ambush = "yes"
+end]]></LuaScript>
+            <VarRet>ambush</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Ambush</SpellName>
+      <Priority>99</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[cheapshot = "no"
+if IsStealthed()
+and UnitExists("target")
+then
+cheapshot = "yes"
+end]]></LuaScript>
+            <VarRet>cheapshot</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cheap Shot</SpellName>
+      <Priority>98</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[garrote = "no"
+if IsStealthed()
+and UnitExists("target")
+then
+garrote = "yes"
+end]]></LuaScript>
+            <VarRet>garrote</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Garrote</SpellName>
+      <Priority>97</Priority>
+    </FightClassSpell>
+
+    <!-- Combat Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[adrenaline = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") >= 0.8
+then
+adrenaline = "yes"
+end]]></LuaScript>
+            <VarRet>adrenaline</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Adrenaline Rush</SpellName>
+      <Priority>96</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[backstab = "no"
+-- Initialize variables if they don't exist
+if not lastBackstabAttempt then lastBackstabAttempt = 0 end
+if not lastBackstabFail then lastBackstabFail = 0 end
+if not backstabFailCount then backstabFailCount = 0 end
+
+local currentTime = GetTime()
+local timeSinceLastAttempt = currentTime - lastBackstabAttempt
+local timeSinceLastFail = currentTime - lastBackstabFail
+
+-- Check combat log for positioning failure
+for i = 1, GetNumCombatLogLines() do
+    local text = GetCombatLogLine(i)
+    if text and text:find("You must be behind your target.") then
+        if currentTime - lastBackstabFail > 0.5 then
+            lastBackstabFail = currentTime
+            backstabFailCount = backstabFailCount + 1
+        end
+        break
+    end
+end
+
+-- Reset fail count if we haven't failed in a while
+if timeSinceLastFail > 5 then
+    backstabFailCount = 0
+end
+
+if UnitExists("target") 
+and not IsStealthed()
+and UnitPower("player") >= 60
+and (
+    -- Try backstab if:
+    (backstabFailCount == 0 and timeSinceLastAttempt > 1.5) or -- No recent fails, normal cooldown
+    (backstabFailCount == 1 and timeSinceLastFail > 2) or -- Failed once, wait 2 sec
+    (backstabFailCount >= 2 and timeSinceLastFail > 3) or -- Failed multiple times, wait 3 sec
+    timeSinceLastAttempt > 4 -- Force attempt after 4 sec regardless
+)
+and UnitBuff("player", "Slice and Dice") -- Only if SnD is up (from dRotation logic)
+and not UnitIsPlayer("target") -- Avoid getting stuck trying to backstab players
+then
+    lastBackstabAttempt = currentTime
+    backstab = "yes"
+end]]></LuaScript>
+            <VarRet>backstab</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Backstab</SpellName>
+      <Priority>95</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[flurry = "no"
+if UnitAffectingCombat("player")
+and UnitPower("player") >= 25
+then
+flurry = "yes"
+end]]></LuaScript>
+            <VarRet>flurry</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Blade Flurry</SpellName>
+      <Priority>94</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[spree = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") >= 0.8
+then
+spree = "yes"
+end]]></LuaScript>
+            <VarRet>spree</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Killing Spree</SpellName>
+      <Priority>93</Priority>
+    </FightClassSpell>
+
+    <!-- Assassination Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[coldblood = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") >= 0.8
+then
+coldblood = "yes"
+end]]></LuaScript>
+            <VarRet>coldblood</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cold Blood</SpellName>
+      <Priority>92</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[mutilate = "no"
+if UnitExists("target")
+and UnitPower("player") >= 60
+and not IsStealthed()
+then
+mutilate = "yes"
+end]]></LuaScript>
+            <VarRet>mutilate</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mutilate</SpellName>
+      <Priority>91</Priority>
+    </FightClassSpell>
+
+    <!-- Subtlety Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[hemorrhage = "no"
+if UnitExists("target")
+and UnitPower("player") >= 35
+and not IsStealthed()
+then
+hemorrhage = "yes"
+end]]></LuaScript>
+            <VarRet>hemorrhage</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Hemorrhage</SpellName>
+      <Priority>90</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[shadowdance = "no"
+if UnitExists("target")
+and UnitHealth("player")/UnitHealthMax("player") >= 0.8
+then
+shadowdance = "yes"
+end]]></LuaScript>
+            <VarRet>shadowdance</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Dance</SpellName>
+      <Priority>89</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[shadowstep = "no"
+if UnitExists("target")
+and IsSpellInRange("Shadowstep", "target") == 1
+then
+shadowstep = "yes"
+end]]></LuaScript>
+            <VarRet>shadowstep</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadowstep</SpellName>
+      <Priority>88</Priority>
+    </FightClassSpell>
+
+    <!-- Maintain Buffs -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[slice = "no"
+if UnitExists("target")
+and (
+    -- Refresh early if we have 5 combo points
+    (GetComboPoints("player", "target") >= 5 and UnitBuffTimeLeft("player", "Slice and Dice") < 6) or
+    -- Emergency refresh with any combo points if about to fall off
+    (GetComboPoints("player", "target") >= 1 and UnitBuffTimeLeft("player", "Slice and Dice") < 2) or
+    -- Initial application
+    (GetComboPoints("player", "target") >= 1 and not UnitBuff("player", "Slice and Dice"))
+)
+then
+slice = "yes"
+end]]></LuaScript>
+            <VarRet>slice</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Slice and Dice</SpellName>
+      <Priority>99</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[hunger = "no"
+if UnitExists("target")
+and not UnitBuff("player", "Hunger For Blood")
+then
+hunger = "yes"
+end]]></LuaScript>
+            <VarRet>hunger</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Hunger For Blood</SpellName>
+      <Priority>98</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[rupture = "no"
+if UnitExists("target")
+and (
+    -- Refresh early with 5 combo points
+    (GetComboPoints("player", "target") >= 5 and UnitDebuffTimeLeft("target", "Rupture") < 6) or
+    -- Emergency refresh with any combo points if about to fall off
+    (GetComboPoints("player", "target") >= 2 and UnitDebuffTimeLeft("target", "Rupture") < 2) or
+    -- Initial application
+    (GetComboPoints("player", "target") >= 2 and not UnitDebuff("target", "Rupture"))
+)
+and not UnitIsPlayer("target") -- Don't waste Rupture on players
+and UnitHealth("target")/UnitHealthMax("target") > 0.15 -- Don't Rupture if target is about to die
+then
+rupture = "yes"
+end]]></LuaScript>
+            <VarRet>rupture</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Rupture</SpellName>
+      <Priority>97</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[envenom = "no"
+if UnitExists("target") then
+    local _, _, _, dpCount = UnitDebuff("target", "Deadly Poison")
+    if not dpCount then dpCount = 0 end
+
+    local _, _, _, _, _, _, envenomExpiration = UnitBuff("player", "Envenom")
+    local envenomTimeLeft = envenomExpiration and (envenomExpiration - GetTime()) or 0
+
+    local _, _, _, _, _, _, sndExpiration = UnitBuff("player", "Slice and Dice")
+    local sndTimeLeft = sndExpiration and (sndExpiration - GetTime()) or 0
+
+    if ((GetComboPoints("player", "target") >= 5 and dpCount >= 4) or
+        (GetComboPoints("player", "target") >= 4 and envenomTimeLeft < 1.5) or
+        (GetComboPoints("player", "target") >= 4 and not UnitBuff("player", "Envenom") and sndTimeLeft > 3))
+    then
+        envenom = "yes"
+    end
+end]]></LuaScript>
+            <VarRet>envenom</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Envenom</SpellName>
+      <Priority>96</Priority>
+    </FightClassSpell>
+
+    <!-- Defensive Abilities -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[evasion = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") <= 0.3
+then
+evasion = "yes"
+end]]></LuaScript>
+            <VarRet>evasion</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Evasion</SpellName>
+      <Priority>84</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[cloak = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") <= 0.4
+then
+cloak = "yes"
+end]]></LuaScript>
+            <VarRet>cloak</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Cloak of Shadows</SpellName>
+      <Priority>83</Priority>
+      <IsBuff>true</IsBuff>
+    </FightClassSpell>
+
+    <!-- Utility -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[kick = "no"
+if UnitExists("target")
+and UnitCastingInfo("target")
+and not UnitBuff("target", "Spell Reflection")
+and not UnitBuff("target", "Grounding Totem Effect")
+then
+kick = "yes"
+end]]></LuaScript>
+            <VarRet>kick</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Kick</SpellName>
+      <Priority>82</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[blind = "no"
+if UnitExists("target")
+and UnitAffectingCombat("player")
+then
+blind = "yes"
+end]]></LuaScript>
+            <VarRet>blind</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Blind</SpellName>
+      <Priority>81</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[tricks = "no"
+if UnitExists("target")
+and UnitAffectingCombat("player")
+then
+tricks = "yes"
+end]]></LuaScript>
+            <VarRet>tricks</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Tricks of the Trade</SpellName>
+      <Priority>80</Priority>
+    </FightClassSpell>
+
+    <!-- Emergency -->
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[vanish = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") <= 0.3
+then
+vanish = "yes"
+end]]></LuaScript>
+            <VarRet>vanish</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vanish</SpellName>
+      <Priority>79</Priority>
+    </FightClassSpell>
+
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript><![CDATA[sprint = "no"
+if UnitAffectingCombat("player")
+and UnitHealth("player")/UnitHealthMax("player") <= 0.4
+then
+sprint = "yes"
+end]]></LuaScript>
+            <VarRet>sprint</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Sprint</SpellName>
+      <Priority>78</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

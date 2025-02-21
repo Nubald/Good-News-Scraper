@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GathererSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProfileName>gath.xml</ProfileName>
+  <PathingReverseDirection>false</PathingReverseDirection>
+  <MountAllTime>true</MountAllTime>
+  <DisableAttackBeforeAttacked>false</DisableAttackBeforeAttacked>
+  <RetLastPos>false</RetLastPos>
+  <RandomisePath>true</RandomisePath>
+  <RandomiseDistanceMax>2.5</RandomiseDistanceMax>
+  <OverrideSkipInOutDoors>true</OverrideSkipInOutDoors>
+  <SkipIfPlayerNear>true</SkipIfPlayerNear>
+  <RandomizeNodePosition>0</RandomizeNodePosition>
+</GathererSetting>

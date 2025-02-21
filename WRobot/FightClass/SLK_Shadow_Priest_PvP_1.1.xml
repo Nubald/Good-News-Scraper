@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Fight config name</FightClassName>
+    <Range>25</Range>
+    <FramePerSecond>30</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Hymn of Hope</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Hymn of Hope</SpellName>
+      <Priority>28</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>80</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Flash Heal</SpellName>
+      <Priority>27</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>BuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Renew</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>90</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Renew</SpellName>
+      <Priority>26</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadowform</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadowform</SpellName>
+      <Priority>25</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dispersion</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Dispersion</SpellName>
+      <Priority>24</Priority>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>20</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Dispersion</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Dispersion</SpellName>
+      <Priority>23</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Bladestorm</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Psychic Horror</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic Horror</SpellName>
+      <Priority>22</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Psychic Horror</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Dance</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic Horror</SpellName>
+      <Priority>21</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Silence</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Silence</SpellName>
+      <Priority>20</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Psychic Scream</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>7</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic Scream</SpellName>
+      <Priority>19</Priority>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Protection</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>25</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Dispel Magic</SpellName>
+      <Priority>18</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>target</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Spell Reflection</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>29</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Dispel Magic</SpellName>
+      <Priority>17</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOn>target</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Psychic Horror</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Silence</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic Horror</SpellName>
+      <Priority>16</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Power Word: Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Power Word: Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Weakened Soul</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Power Word: Shield</SpellName>
+      <Priority>15</Priority>
+      <CastIfMounted>true</CastIfMounted>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadowfiend</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadowfiend</SpellName>
+      <Priority>14</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Word: Pain</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Word: Pain</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Devouring Plague</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Devouring Plague</SpellName>
+      <Priority>12</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>BiggerOrEqual</Type>
+            <Value>10</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Vampiric Touch</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vampiric Touch</SpellName>
+      <Priority>11</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Mind Blast</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mind Blast</SpellName>
+      <Priority>10</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Word: Death</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Word: Death</SpellName>
+      <Priority>9</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>35</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Shield</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Anti-Magic Shell</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Cloak of Shadows</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mind Flay</SpellName>
+      <Priority>8</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>3</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shoot</SpellName>
+      <Priority>7</Priority>
+      <Timer>9000</Timer>
+      <CanMoveDuringCast>No</CanMoveDuringCast>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Power Word: Fortitude</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of Fortitude</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Power Word: Fortitude</SpellName>
+      <Priority>6</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine Spirit</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of Spirit</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Divine Spirit</SpellName>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Fear Ward</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>CooldownEnabled</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Fear Ward</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Fear Ward</SpellName>
+      <Priority>4</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Inner Fire</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Inner Fire</SpellName>
+      <Priority>3</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Vampiric Embrace</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vampiric Embrace</SpellName>
+      <Priority>2</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Protection</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of Shadow Protection</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Protection</SpellName>
+      <Priority>1</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CheckIfKnow>false</CheckIfKnow>
+      <CheckIfSpellUsable>false</CheckIfSpellUsable>
+      <CheckSpellDistance>false</CheckSpellDistance>
+      <CheckIfView>false</CheckIfView>
+      <CanMoveDuringCast>Yes</CanMoveDuringCast>
+      <CastOnSelf>true</CastOnSelf>
+      <WaitDuringCasting>false</WaitDuringCasting>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

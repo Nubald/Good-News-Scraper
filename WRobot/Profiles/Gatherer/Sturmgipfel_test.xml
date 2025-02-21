@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GathererProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Vectors3>
+    <Vector3 X="6499.116" Y="-1221.012" Z="521.7564" Type="Flying" />
+    <Vector3 X="6509.141" Y="-1234.845" Z="526.4938" Type="Flying" />
+    <Vector3 X="6516.325" Y="-1250.078" Z="531.9738" Type="Flying" />
+    <Vector3 X="6520.271" Y="-1266.462" Z="538.3463" Type="Flying" />
+    <Vector3 X="6522.685" Y="-1282.582" Z="544.6144" Type="Flying" />
+    <Vector3 X="6524.532" Y="-1299.192" Z="550.5788" Type="Flying" />
+    <Vector3 X="6526.392" Y="-1316.329" Z="556.6833" Type="Flying" />
+    <Vector3 X="6528.268" Y="-1333.203" Z="562.7365" Type="Flying" />
+    <Vector3 X="6530.39" Y="-1349.358" Z="569.7572" Type="Flying" />
+    <Vector3 X="6532.477" Y="-1365.027" Z="577.8134" Type="Flying" />
+    <Vector3 X="6534.88" Y="-1380.859" Z="586.6442" Type="Flying" />
+    <Vector3 X="6537.883" Y="-1395.926" Z="595.5197" Type="Flying" />
+    <Vector3 X="6542.273" Y="-1410.897" Z="605.05" Type="Flying" />
+    <Vector3 X="6547.659" Y="-1425.15" Z="614.6806" Type="Flying" />
+    <Vector3 X="6553.796" Y="-1438.816" Z="624.189" Type="Flying" />
+    <Vector3 X="6560.832" Y="-1451.994" Z="633.7653" Type="Flying" />
+    <Vector3 X="6568.404" Y="-1465.091" Z="643.5315" Type="Flying" />
+    <Vector3 X="6576.339" Y="-1477.988" Z="653.309" Type="Flying" />
+    <Vector3 X="6584.807" Y="-1490.76" Z="663.2786" Type="Flying" />
+    <Vector3 X="6593.627" Y="-1502.818" Z="673.3636" Type="Flying" />
+    <Vector3 X="6602.315" Y="-1514.581" Z="683.4146" Type="Flying" />
+    <Vector3 X="6611.207" Y="-1526.107" Z="693.5605" Type="Flying" />
+    <Vector3 X="6620.247" Y="-1537.355" Z="703.8864" Type="Flying" />
+    <Vector3 X="6629.909" Y="-1548.694" Z="714.4904" Type="Flying" />
+    <Vector3 X="6639.592" Y="-1559.809" Z="724.3658" Type="Flying" />
+    <Vector3 X="6649.568" Y="-1571.537" Z="734.2323" Type="Flying" />
+    <Vector3 X="6659.276" Y="-1583.225" Z="743.9304" Type="Flying" />
+    <Vector3 X="6668.976" Y="-1594.901" Z="753.6191" Type="Flying" />
+    <Vector3 X="6678.684" Y="-1606.588" Z="763.3171" Type="Flying" />
+    <Vector3 X="6688.826" Y="-1618.797" Z="773.4484" Type="Flying" />
+    <Vector3 X="6698.686" Y="-1630.666" Z="783.2971" Type="Flying" />
+    <Vector3 X="6708.566" Y="-1642.375" Z="792.7545" Type="Flying" />
+    <Vector3 X="6718.687" Y="-1654.177" Z="801.8757" Type="Flying" />
+    <Vector3 X="6728.862" Y="-1665.832" Z="810.5625" Type="Flying" />
+    <Vector3 X="6741.037" Y="-1678.835" Z="819.5022" Type="Flying" />
+    <Vector3 X="6752.241" Y="-1690.717" Z="827.0898" Type="Flying" />
+    <Vector3 X="6763.665" Y="-1702.494" Z="834.5464" Type="Flying" />
+    <Vector3 X="6775.865" Y="-1713.186" Z="841.7224" Type="Flying" />
+    <Vector3 X="6789.688" Y="-1722.738" Z="849.6102" Type="Flying" />
+    <Vector3 X="6803.531" Y="-1730.271" Z="857.7445" Type="Flying" />
+    <Vector3 X="6818.215" Y="-1735.597" Z="866.1293" Type="Flying" />
+    <Vector3 X="6833.148" Y="-1739.594" Z="874.2502" Type="Flying" />
+    <Vector3 X="6849.496" Y="-1743.245" Z="881.5446" Type="Flying" />
+    <Vector3 X="6866.567" Y="-1747.409" Z="885.3979" Type="Flying" />
+    <Vector3 X="6883.947" Y="-1751.897" Z="884.2047" Type="Flying" />
+    <Vector3 X="6901.061" Y="-1756.989" Z="881.9257" Type="Flying" />
+    <Vector3 X="6917.581" Y="-1763.895" Z="879.9834" Type="Flying" />
+    <Vector3 X="6932.896" Y="-1773.634" Z="877.9341" Type="Flying" />
+    <Vector3 X="6946.697" Y="-1785.357" Z="875.4869" Type="Flying" />
+    <Vector3 X="6959.468" Y="-1797.743" Z="872.5988" Type="Flying" />
+    <Vector3 X="6971.087" Y="-1810.525" Z="868.7363" Type="Flying" />
+    <Vector3 X="6981.341" Y="-1824.125" Z="863.7582" Type="Flying" />
+    <Vector3 X="6991.426" Y="-1837.186" Z="857.2382" Type="Flying" />
+    <Vector3 X="7001.719" Y="-1850.789" Z="850.6509" Type="Flying" />
+    <Vector3 X="7011.344" Y="-1864.659" Z="845.2271" Type="Flying" />
+    <Vector3 X="7020.864" Y="-1880.453" Z="843.4022" Type="Flying" />
+    <Vector3 X="7029.338" Y="-1896.012" Z="842.8016" Type="Flying" />
+    <Vector3 X="7037.381" Y="-1911.692" Z="839.2845" Type="Flying" />
+    <Vector3 X="7044.541" Y="-1926.717" Z="831.8292" Type="Flying" />
+    <Vector3 X="7049.861" Y="-1940.623" Z="821.2159" Type="Flying" />
+    <Vector3 X="7054.498" Y="-1954.093" Z="810.6365" Type="Flying" />
+    <Vector3 X="7058.674" Y="-1966.969" Z="799.1667" Type="Flying" />
+    <Vector3 X="7062.729" Y="-1981.111" Z="789.4537" Type="Flying" />
+    <Vector3 X="7066.857" Y="-1997.918" Z="786.2515" Type="Flying" />
+    <Vector3 X="7069.7" Y="-2016.166" Z="787.9776" Type="Flying" />
+    <Vector3 X="7070.996" Y="-2033.737" Z="789.9892" Type="Flying" />
+    <Vector3 X="7070.678" Y="-2051.438" Z="790.9322" Type="Flying" />
+    <Vector3 X="7069.555" Y="-2069.652" Z="789.7595" Type="Flying" />
+    <Vector3 X="7067.792" Y="-2087.436" Z="787.4688" Type="Flying" />
+    <Vector3 X="7067.011" Y="-2105.635" Z="785.9634" Type="Flying" />
+    <Vector3 X="7067.59" Y="-2123.313" Z="784.5853" Type="Flying" />
+    <Vector3 X="7070.996" Y="-2140.628" Z="783.059" Type="Flying" />
+    <Vector3 X="7077.177" Y="-2157.208" Z="781.969" Type="Flying" />
+    <Vector3 X="7085.771" Y="-2173.271" Z="780.5648" Type="Flying" />
+    <Vector3 X="7096.088" Y="-2188.284" Z="779.0344" Type="Flying" />
+    <Vector3 X="7107.441" Y="-2202.236" Z="778.1728" Type="Flying" />
+    <Vector3 X="7119.25" Y="-2215.478" Z="778.4587" Type="Flying" />
+    <Vector3 X="7131.061" Y="-2228.716" Z="778.8303" Type="Flying" />
+    <Vector3 X="7142.869" Y="-2241.949" Z="779.3719" Type="Flying" />
+    <Vector3 X="7154.653" Y="-2255.156" Z="780.6423" Type="Flying" />
+    <Vector3 X="7166.262" Y="-2268.172" Z="781.4927" Type="Flying" />
+    <Vector3 X="7177.938" Y="-2281.902" Z="781.6921" Type="Flying" />
+    <Vector3 X="7189.552" Y="-2295.662" Z="781.8807" Type="Flying" />
+    <Vector3 X="7201.076" Y="-2309.521" Z="782.0244" Type="Flying" />
+    <Vector3 X="7212.415" Y="-2323.17" Z="782.1638" Type="Flying" />
+    <Vector3 X="7223.371" Y="-2336.995" Z="780.4545" Type="Flying" />
+    <Vector3 X="7234.083" Y="-2350.891" Z="777.8187" Type="Flying" />
+    <Vector3 X="7244.867" Y="-2365.212" Z="775.9467" Type="Flying" />
+    <Vector3 X="7255.553" Y="-2379.633" Z="774.4969" Type="Flying" />
+    <Vector3 X="7266.156" Y="-2394.153" Z="773.2188" Type="Flying" />
+    <Vector3 X="7276.854" Y="-2408.936" Z="772.0228" Type="Flying" />
+    <Vector3 X="7287.2" Y="-2423.659" Z="770.978" Type="Flying" />
+    <Vector3 X="7297.094" Y="-2438.02" Z="770.0426" Type="Flying" />
+    <Vector3 X="7305.887" Y="-2453.705" Z="769.3284" Type="Flying" />
+    <Vector3 X="7311.146" Y="-2471.755" Z="768.7735" Type="Flying" />
+    <Vector3 X="7313.445" Y="-2489.609" Z="768.6061" Type="Flying" />
+    <Vector3 X="7313.482" Y="-2507.892" Z="768.7691" Type="Flying" />
+    <Vector3 X="7313.039" Y="-2525.349" Z="768.9977" Type="Flying" />
+    <Vector3 X="7312.714" Y="-2543.906" Z="769.452" Type="Flying" />
+    <Vector3 X="7313.38" Y="-2561.998" Z="771.7842" Type="Flying" />
+    <Vector3 X="7314.5" Y="-2579.25" Z="776.8599" Type="Flying" />
+    <Vector3 X="7315.728" Y="-2596.562" Z="782.6217" Type="Flying" />
+    <Vector3 X="7317.984" Y="-2613.738" Z="787.5961" Type="Flying" />
+    <Vector3 X="7320.194" Y="-2630.659" Z="792.4595" Type="Flying" />
+    <Vector3 X="7321.814" Y="-2647.618" Z="797.4103" Type="Flying" />
+    <Vector3 X="7322.986" Y="-2664.618" Z="802.361" Type="Flying" />
+    <Vector3 X="7324.158" Y="-2681.618" Z="807.3117" Type="Flying" />
+    <Vector3 X="7325.429" Y="-2698.875" Z="812.2979" Type="Flying" />
+    <Vector3 X="7327.598" Y="-2716.409" Z="817.0847" Type="Flying" />
+    <Vector3 X="7329.744" Y="-2733.657" Z="821.7909" Type="Flying" />
+    <Vector3 X="7331.892" Y="-2750.923" Z="826.5016" Type="Flying" />
+    <Vector3 X="7334.007" Y="-2767.92" Z="831.1392" Type="Flying" />
+    <Vector3 X="7335.665" Y="-2785.234" Z="835.7764" Type="Flying" />
+    <Vector3 X="7336.731" Y="-2802.706" Z="840.0714" Type="Flying" />
+    <Vector3 X="7337.786" Y="-2819.981" Z="843.9877" Type="Flying" />
+    <Vector3 X="7338.786" Y="-2836.738" Z="847.7443" Type="Flying" />
+    <Vector3 X="7339.761" Y="-2854.655" Z="851.2747" Type="Flying" />
+    <Vector3 X="7340.818" Y="-2872.069" Z="854.5125" Type="Flying" />
+    <Vector3 X="7342.216" Y="-2889.804" Z="857.412" Type="Flying" />
+    <Vector3 X="7343.528" Y="-2907.829" Z="860.2078" Type="Flying" />
+    <Vector3 X="7344.338" Y="-2925.441" Z="862.1944" Type="Flying" />
+    <Vector3 X="7344.931" Y="-2943.11" Z="863.7198" Type="Flying" />
+    <Vector3 X="7345.36" Y="-2961.328" Z="865.25" Type="Flying" />
+    <Vector3 X="7345.131" Y="-2979.295" Z="866.6392" Type="Flying" />
+    <Vector3 X="7342.057" Y="-2997.26" Z="867.6281" Type="Flying" />
+    <Vector3 X="7336.769" Y="-3014.167" Z="868.6031" Type="Flying" />
+    <Vector3 X="7330.939" Y="-3030.898" Z="869.5738" Type="Flying" />
+    <Vector3 X="7323.903" Y="-3047.477" Z="870.1334" Type="Flying" />
+    <Vector3 X="7315.748" Y="-3063.524" Z="870.3547" Type="Flying" />
+    <Vector3 X="7306.014" Y="-3079.334" Z="870.5491" Type="Flying" />
+    <Vector3 X="7296.655" Y="-3094.409" Z="870.7349" Type="Flying" />
+    <Vector3 X="7286.536" Y="-3109.638" Z="870.892" Type="Flying" />
+    <Vector3 X="7276.377" Y="-3124.527" Z="871.05" Type="Flying" />
+    <Vector3 X="7266.302" Y="-3139.058" Z="872.4899" Type="Flying" />
+    <Vector3 X="7255.971" Y="-3153.823" Z="875.5634" Type="Flying" />
+    <Vector3 X="7246.003" Y="-3168.067" Z="879.1163" Type="Flying" />
+    <Vector3 X="7235.574" Y="-3182.973" Z="882.8339" Type="Flying" />
+    <Vector3 X="7225.607" Y="-3197.218" Z="886.3869" Type="Flying" />
+    <Vector3 X="7215.64" Y="-3211.462" Z="889.9398" Type="Flying" />
+    <Vector3 X="7205.698" Y="-3225.821" Z="890.2515" Type="Flying" />
+    <Vector3 X="7195.458" Y="-3240.958" Z="889.8075" Type="Flying" />
+    <Vector3 X="7185.784" Y="-3255.256" Z="890.8442" Type="Flying" />
+    <Vector3 X="7182.213" Y="-3260.534" Z="897.217" Type="Flying" />
+    <Vector3 X="7173.462" Y="-3273.624" Z="901.9572" Type="Flying" />
+    <Vector3 X="7163.695" Y="-3288.438" Z="901.853" Type="Flying" />
+    <Vector3 X="7156.905" Y="-3304.731" Z="904.8452" Type="Flying" />
+    <Vector3 X="7153.085" Y="-3321.35" Z="910.653" Type="Flying" />
+    <Vector3 X="7150.209" Y="-3337.866" Z="917.2717" Type="Flying" />
+    <Vector3 X="7147.982" Y="-3354.557" Z="923.6457" Type="Flying" />
+    <Vector3 X="7145.747" Y="-3371.882" Z="927.8576" Type="Flying" />
+    <Vector3 X="7142.992" Y="-3389.938" Z="928.251" Type="Flying" />
+    <Vector3 X="7139.97" Y="-3407.674" Z="927.2235" Type="Flying" />
+    <Vector3 X="7136.458" Y="-3425.106" Z="924.5559" Type="Flying" />
+    <Vector3 X="7132.833" Y="-3441.791" Z="918.8052" Type="Flying" />
+    <Vector3 X="7129.225" Y="-3458.455" Z="912.1922" Type="Flying" />
+    <Vector3 X="7126.218" Y="-3475.023" Z="905.7751" Type="Flying" />
+    <Vector3 X="7125.381" Y="-3491.963" Z="900.64" Type="Flying" />
+    <Vector3 X="7127.337" Y="-3508.963" Z="896.025" Type="Flying" />
+    <Vector3 X="7133.277" Y="-3525.127" Z="891.8211" Type="Flying" />
+    <Vector3 X="7141.646" Y="-3540.353" Z="888.272" Type="Flying" />
+    <Vector3 X="7152.691" Y="-3554.261" Z="885.5016" Type="Flying" />
+    <Vector3 X="7166.947" Y="-3565.539" Z="883.7908" Type="Flying" />
+    <Vector3 X="7182.725" Y="-3574.181" Z="883.3483" Type="Flying" />
+    <Vector3 X="7197.247" Y="-3584.851" Z="883.4041" Type="Flying" />
+    <Vector3 X="7213.43" Y="-3592.954" Z="883.6264" Type="Flying" />
+    <Vector3 X="7230.986" Y="-3592.684" Z="884.607" Type="Flying" />
+    <Vector3 X="7246.145" Y="-3583.67" Z="887.0257" Type="Flying" />
+    <Vector3 X="7253.52" Y="-3568.155" Z="891.9706" Type="Flying" />
+    <Vector3 X="7257.546" Y="-3551.446" Z="897.3544" Type="Flying" />
+    <Vector3 X="7259.263" Y="-3534.385" Z="901.8843" Type="Flying" />
+    <Vector3 X="7260.18" Y="-3517.075" Z="905.679" Type="Flying" />
+    <Vector3 X="7261.463" Y="-3499.798" Z="909.5046" Type="Flying" />
+    <Vector3 X="7263.904" Y="-3482.764" Z="913.7668" Type="Flying" />
+    <Vector3 X="7268.682" Y="-3466.36" Z="918.5403" Type="Flying" />
+    <Vector3 X="7275.003" Y="-3450.151" Z="924.158" Type="Flying" />
+    <Vector3 X="7281.564" Y="-3434.512" Z="930.2416" Type="Flying" />
+    <Vector3 X="7289.519" Y="-3418.461" Z="933.8559" Type="Flying" />
+    <Vector3 X="7298.189" Y="-3403.109" Z="935.8267" Type="Flying" />
+    <Vector3 X="7306.922" Y="-3387.703" Z="936.5681" Type="Flying" />
+    <Vector3 X="7315.876" Y="-3372.495" Z="934.7938" Type="Flying" />
+    <Vector3 X="7325.61" Y="-3357.408" Z="931.3896" Type="Flying" />
+    <Vector3 X="7336.528" Y="-3343.421" Z="927.0198" Type="Flying" />
+    <Vector3 X="7348.379" Y="-3330.74" Z="922.1834" Type="Flying" />
+    <Vector3 X="7360.202" Y="-3318.767" Z="916.5491" Type="Flying" />
+    <Vector3 X="7372.963" Y="-3307.375" Z="910.9672" Type="Flying" />
+    <Vector3 X="7388.396" Y="-3298.972" Z="907.1261" Type="Flying" />
+    <Vector3 X="7404.397" Y="-3291.781" Z="904.5037" Type="Flying" />
+    <Vector3 X="7421.01" Y="-3285.938" Z="902.3979" Type="Flying" />
+    <Vector3 X="7438.528" Y="-3281.065" Z="900.4807" Type="Flying" />
+    <Vector3 X="7456.125" Y="-3277.53" Z="899.0111" Type="Flying" />
+    <Vector3 X="7473.993" Y="-3275.261" Z="898.3377" Type="Flying" />
+    <Vector3 X="7492.225" Y="-3274.065" Z="897.7805" Type="Flying" />
+    <Vector3 X="7510.784" Y="-3274.246" Z="897.4317" Type="Flying" />
+    <Vector3 X="7528.205" Y="-3275.429" Z="897.2809" Type="Flying" />
+    <Vector3 X="7545.889" Y="-3276.896" Z="897.1959" Type="Flying" />
+    <Vector3 X="7563.994" Y="-3279.447" Z="897.2931" Type="Flying" />
+    <Vector3 X="7581.798" Y="-3282.254" Z="897.4375" Type="Flying" />
+    <Vector3 X="7598.959" Y="-3285.488" Z="897.6424" Type="Flying" />
+    <Vector3 X="7616.564" Y="-3289.346" Z="897.9285" Type="Flying" />
+    <Vector3 X="7633.788" Y="-3293.602" Z="898.2537" Type="Flying" />
+    <Vector3 X="7650.859" Y="-3298.429" Z="898.5788" Type="Flying" />
+    <Vector3 X="7667.687" Y="-3304.047" Z="898.9768" Type="Flying" />
+    <Vector3 X="7684.356" Y="-3310.103" Z="899.5356" Type="Flying" />
+    <Vector3 X="7701.501" Y="-3316.43" Z="900.2" Type="Flying" />
+    <Vector3 X="7718.789" Y="-3323.078" Z="901.5006" Type="Flying" />
+    <Vector3 X="7735.307" Y="-3329.43" Z="902.8002" Type="Flying" />
+    <Vector3 X="7752.302" Y="-3335.965" Z="904.4146" Type="Flying" />
+    <Vector3 X="7768.568" Y="-3341.947" Z="908.1722" Type="Flying" />
+    <Vector3 X="7784.967" Y="-3347.284" Z="913.3867" Type="Flying" />
+    <Vector3 X="7800.68" Y="-3353.263" Z="919.6894" Type="Flying" />
+    <Vector3 X="7815.291" Y="-3362.999" Z="923.1641" Type="Flying" />
+    <Vector3 X="7829.746" Y="-3373.227" Z="922.0891" Type="Flying" />
+    <Vector3 X="7845.039" Y="-3381.992" Z="920.2976" Type="Flying" />
+    <Vector3 X="7863.91" Y="-3387.898" Z="918.5258" Type="Flying" />
+    <Vector3 X="7882.063" Y="-3388.589" Z="916.9001" Type="Flying" />
+    <Vector3 X="7899.822" Y="-3386.142" Z="915.3199" Type="Flying" />
+    <Vector3 X="7916.831" Y="-3379.731" Z="913.8333" Type="Flying" />
+    <Vector3 X="7932.73" Y="-3370.843" Z="912.3602" Type="Flying" />
+    <Vector3 X="7945.862" Y="-3359.051" Z="911.1033" Type="Flying" />
+    <Vector3 X="7956.029" Y="-3343.912" Z="910.1439" Type="Flying" />
+    <Vector3 X="7962.268" Y="-3327.103" Z="909.4078" Type="Flying" />
+    <Vector3 X="7963.603" Y="-3309.469" Z="908.3278" Type="Flying" />
+    <Vector3 X="7962.612" Y="-3291.361" Z="906.6281" Type="Flying" />
+    <Vector3 X="7957.825" Y="-3274.094" Z="904.8295" Type="Flying" />
+    <Vector3 X="7950.344" Y="-3257.249" Z="902.8366" Type="Flying" />
+    <Vector3 X="7941.344" Y="-3241.73" Z="901.1361" Type="Flying" />
+    <Vector3 X="7929.939" Y="-3228.172" Z="900.814" Type="Flying" />
+    <Vector3 X="7917.203" Y="-3215.821" Z="900.7568" Type="Flying" />
+    <Vector3 X="7903.273" Y="-3203.981" Z="900.8105" Type="Flying" />
+    <Vector3 X="7888.723" Y="-3193.839" Z="901.1191" Type="Flying" />
+    <Vector3 X="7872.862" Y="-3184.197" Z="901.405" Type="Flying" />
+    <Vector3 X="7857.154" Y="-3175.949" Z="901.1827" Type="Flying" />
+    <Vector3 X="7840.805" Y="-3168.371" Z="900.8166" Type="Flying" />
+    <Vector3 X="7824.138" Y="-3160.854" Z="900.4336" Type="Flying" />
+    <Vector3 X="7807.954" Y="-3153.586" Z="900.062" Type="Flying" />
+    <Vector3 X="7790.783" Y="-3145.818" Z="900.1977" Type="Flying" />
+    <Vector3 X="7774.697" Y="-3138.339" Z="900.5479" Type="Flying" />
+    <Vector3 X="7758.961" Y="-3130.187" Z="901.408" Type="Flying" />
+    <Vector3 X="7743.776" Y="-3121.145" Z="902.9243" Type="Flying" />
+    <Vector3 X="7729.346" Y="-3111.041" Z="905.0513" Type="Flying" />
+    <Vector3 X="7714.925" Y="-3101.039" Z="907.6575" Type="Flying" />
+    <Vector3 X="7697.759" Y="-3089.41" Z="911.1725" Type="Flying" />
+    <Vector3 X="7682.987" Y="-3079.253" Z="914.7871" Type="Flying" />
+    <Vector3 X="7668.471" Y="-3069.179" Z="918.3499" Type="Flying" />
+    <Vector3 X="7653.938" Y="-3059.093" Z="921.7142" Type="Flying" />
+    <Vector3 X="7639.377" Y="-3048.989" Z="924.999" Type="Flying" />
+    <Vector3 X="7625.065" Y="-3038.962" Z="928.0779" Type="Flying" />
+    <Vector3 X="7610.829" Y="-3028.8" Z="931.0611" Type="Flying" />
+    <Vector3 X="7597.003" Y="-3018.124" Z="934.1788" Type="Flying" />
+    <Vector3 X="7583.575" Y="-3006.951" Z="937.2916" Type="Flying" />
+    <Vector3 X="7571.048" Y="-2995.081" Z="939.9019" Type="Flying" />
+    <Vector3 X="7560.644" Y="-2980.472" Z="940.9446" Type="Flying" />
+    <Vector3 X="7554.592" Y="-2963.843" Z="940.8306" Type="Flying" />
+    <Vector3 X="7550.772" Y="-2949.322" Z="940.7127" Type="Flying" />
+    <Vector3 X="7546.406" Y="-2931.838" Z="940.571" Type="Flying" />
+    <Vector3 X="7543.687" Y="-2914.046" Z="940.4103" Type="Flying" />
+    <Vector3 X="7543.118" Y="-2896.338" Z="940.4647" Type="Flying" />
+    <Vector3 X="7546.177" Y="-2878.076" Z="941.4923" Type="Flying" />
+    <Vector3 X="7549.407" Y="-2860.796" Z="943.9005" Type="Flying" />
+    <Vector3 X="7552.113" Y="-2843.115" Z="946.1249" Type="Flying" />
+    <Vector3 X="7554.817" Y="-2825.416" Z="948.0146" Type="Flying" />
+    <Vector3 X="7557.775" Y="-2807.653" Z="948.8" Type="Flying" />
+    <Vector3 X="7560.71" Y="-2790.156" Z="949.0801" Type="Flying" />
+    <Vector3 X="7563.414" Y="-2772.624" Z="948.6561" Type="Flying" />
+    <Vector3 X="7565.819" Y="-2755.06" Z="947.9444" Type="Flying" />
+    <Vector3 X="7567.553" Y="-2737.233" Z="946.1287" Type="Flying" />
+    <Vector3 X="7569.557" Y="-2719.199" Z="943.7139" Type="Flying" />
+    <Vector3 X="7571.474" Y="-2701.589" Z="940.5605" Type="Flying" />
+    <Vector3 X="7572.874" Y="-2684.305" Z="935.6391" Type="Flying" />
+    <Vector3 X="7574.246" Y="-2667.294" Z="930.7776" Type="Flying" />
+    <Vector3 X="7575.659" Y="-2649.763" Z="925.7676" Type="Flying" />
+    <Vector3 X="7576.071" Y="-2632.901" Z="920.2911" Type="Flying" />
+    <Vector3 X="7574.715" Y="-2616.068" Z="913.293" Type="Flying" />
+    <Vector3 X="7571.721" Y="-2600.584" Z="904.6124" Type="Flying" />
+    <Vector3 X="7566.668" Y="-2586.192" Z="894.5756" Type="Flying" />
+    <Vector3 X="7559.338" Y="-2573.257" Z="884.9117" Type="Flying" />
+    <Vector3 X="7550.638" Y="-2560.564" Z="875.0321" Type="Flying" />
+    <Vector3 X="7541.627" Y="-2548.091" Z="865.6525" Type="Flying" />
+    <Vector3 X="7532.236" Y="-2535.113" Z="856.8324" Type="Flying" />
+    <Vector3 X="7523.057" Y="-2522.428" Z="847.9024" Type="Flying" />
+    <Vector3 X="7513.711" Y="-2509.347" Z="839.1926" Type="Flying" />
+    <Vector3 X="7504.435" Y="-2495.634" Z="831.4436" Type="Flying" />
+    <Vector3 X="7495.846" Y="-2480.755" Z="826.0326" Type="Flying" />
+    <Vector3 X="7487.416" Y="-2464.974" Z="822.2819" Type="Flying" />
+    <Vector3 X="7479.788" Y="-2448.707" Z="818.9186" Type="Flying" />
+    <Vector3 X="7472.086" Y="-2432.923" Z="814.8631" Type="Flying" />
+    <Vector3 X="7464.587" Y="-2416.997" Z="809.9143" Type="Flying" />
+    <Vector3 X="7458.273" Y="-2400.891" Z="805.0032" Type="Flying" />
+    <Vector3 X="7454.162" Y="-2383.689" Z="801.6442" Type="Flying" />
+    <Vector3 X="7450.043" Y="-2366.385" Z="798.7313" Type="Flying" />
+    <Vector3 X="7443.827" Y="-2350.016" Z="796.1358" Type="Flying" />
+    <Vector3 X="7433.306" Y="-2335.249" Z="794.3729" Type="Flying" />
+    <Vector3 X="7419.515" Y="-2323.717" Z="794.7525" Type="Flying" />
+    <Vector3 X="7404.26" Y="-2313.695" Z="795.8417" Type="Flying" />
+    <Vector3 X="7389.363" Y="-2304.118" Z="796.9559" Type="Flying" />
+    <Vector3 X="7374.465" Y="-2294.542" Z="798.0701" Type="Flying" />
+    <Vector3 X="7359.113" Y="-2284.672" Z="799.2184" Type="Flying" />
+    <Vector3 X="7343.98" Y="-2274.944" Z="800.3502" Type="Flying" />
+    <Vector3 X="7328.789" Y="-2265.299" Z="800.7127" Type="Flying" />
+    <Vector3 X="7313.384" Y="-2255.971" Z="799.9651" Type="Flying" />
+    <Vector3 X="7298.157" Y="-2246.897" Z="799.1442" Type="Flying" />
+    <Vector3 X="7282.41" Y="-2237.626" Z="798.4261" Type="Flying" />
+    <Vector3 X="7266.888" Y="-2228.489" Z="797.7185" Type="Flying" />
+    <Vector3 X="7251.382" Y="-2219.361" Z="797.0115" Type="Flying" />
+    <Vector3 X="7235.846" Y="-2210.245" Z="796.3796" Type="Flying" />
+    <Vector3 X="7220.568" Y="-2201.225" Z="796.111" Type="Flying" />
+    <Vector3 X="7205.445" Y="-2191.944" Z="796.2811" Type="Flying" />
+    <Vector3 X="7189.765" Y="-2182.004" Z="796.4755" Type="Flying" />
+    <Vector3 X="7176.196" Y="-2170.63" Z="796.6135" Type="Flying" />
+    <Vector3 X="7165.047" Y="-2156.54" Z="796.5901" Type="Flying" />
+    <Vector3 X="7156.234" Y="-2140.21" Z="796.6307" Type="Flying" />
+    <Vector3 X="7149.172" Y="-2123.633" Z="797.0117" Type="Flying" />
+    <Vector3 X="7142.993" Y="-2107.348" Z="798.1777" Type="Flying" />
+    <Vector3 X="7138.544" Y="-2089.953" Z="802.7333" Type="Flying" />
+    <Vector3 X="7136.018" Y="-2073.934" Z="809.8938" Type="Flying" />
+    <Vector3 X="7134.127" Y="-2058.235" Z="819.0751" Type="Flying" />
+    <Vector3 X="7132.279" Y="-2042.879" Z="828.3317" Type="Flying" />
+    <Vector3 X="7130.459" Y="-2027.762" Z="837.4445" Type="Flying" />
+    <Vector3 X="7128.639" Y="-2012.645" Z="846.5573" Type="Flying" />
+    <Vector3 X="7126.595" Y="-1996.9" Z="854.4357" Type="Flying" />
+    <Vector3 X="7124.56" Y="-1980.607" Z="860.3677" Type="Flying" />
+    <Vector3 X="7122.708" Y="-1963.29" Z="864.996" Type="Flying" />
+    <Vector3 X="7120.904" Y="-1946.045" Z="868.764" Type="Flying" />
+    <Vector3 X="7119.193" Y="-1928.418" Z="872.0131" Type="Flying" />
+    <Vector3 X="7118.128" Y="-1910.838" Z="874.1604" Type="Flying" />
+    <Vector3 X="7117.418" Y="-1892.702" Z="878.0061" Type="Flying" />
+    <Vector3 X="7116.76" Y="-1875.131" Z="881.9413" Type="Flying" />
+    <Vector3 X="7115.652" Y="-1857.057" Z="884.4745" Type="Flying" />
+    <Vector3 X="7114.881" Y="-1838.964" Z="886.9077" Type="Flying" />
+    <Vector3 X="7117.315" Y="-1821.457" Z="891.4523" Type="Flying" />
+    <Vector3 X="7121.59" Y="-1805.125" Z="897.7515" Type="Flying" />
+    <Vector3 X="7126.112" Y="-1788.968" Z="905.026" Type="Flying" />
+    <Vector3 X="7130.727" Y="-1772.477" Z="912.202" Type="Flying" />
+    <Vector3 X="7135.143" Y="-1756.707" Z="919.0356" Type="Flying" />
+    <Vector3 X="7140.663" Y="-1741.441" Z="927.4213" Type="Flying" />
+    <Vector3 X="7146.599" Y="-1727.032" Z="936.9874" Type="Flying" />
+    <Vector3 X="7152.483" Y="-1712.914" Z="946.5258" Type="Flying" />
+    <Vector3 X="7158.326" Y="-1699.038" Z="955.9161" Type="Flying" />
+    <Vector3 X="7164.378" Y="-1684.98" Z="965.4357" Type="Flying" />
+    <Vector3 X="7170.861" Y="-1671.485" Z="974.4259" Type="Flying" />
+    <Vector3 X="7178.747" Y="-1657.748" Z="983.0231" Type="Flying" />
+    <Vector3 X="7187.332" Y="-1644.402" Z="990.937" Type="Flying" />
+    <Vector3 X="7197.119" Y="-1630.86" Z="997.6364" Type="Flying" />
+    <Vector3 X="7207.281" Y="-1616.777" Z="1002.372" Type="Flying" />
+    <Vector3 X="7218.913" Y="-1602.798" Z="1003.982" Type="Flying" />
+    <Vector3 X="7231.701" Y="-1590.539" Z="1003.389" Type="Flying" />
+    <Vector3 X="7245.926" Y="-1579.748" Z="1000.993" Type="Flying" />
+    <Vector3 X="7260.222" Y="-1571.029" Z="995.2899" Type="Flying" />
+    <Vector3 X="7274.649" Y="-1562.963" Z="987.48" Type="Flying" />
+    <Vector3 X="7288.778" Y="-1555.306" Z="979.3156" Type="Flying" />
+    <Vector3 X="7304.635" Y="-1546.974" Z="976.1354" Type="Flying" />
+    <Vector3 X="7320.456" Y="-1538.951" Z="975.7755" Type="Flying" />
+    <Vector3 X="7336.238" Y="-1530.88" Z="974.9938" Type="Flying" />
+    <Vector3 X="7352.013" Y="-1522.802" Z="974.1115" Type="Flying" />
+    <Vector3 X="7367.6" Y="-1514.959" Z="973.4915" Type="Flying" />
+    <Vector3 X="7383.797" Y="-1507.063" Z="973.9133" Type="Flying" />
+    <Vector3 X="7400.479" Y="-1498.93" Z="974.4965" Type="Flying" />
+    <Vector3 X="7416.733" Y="-1491.265" Z="975.5443" Type="Flying" />
+    <Vector3 X="7432.739" Y="-1483.843" Z="979.1609" Type="Flying" />
+    <Vector3 X="7448.819" Y="-1475.88" Z="982.6849" Type="Flying" />
+    <Vector3 X="7464.615" Y="-1467.038" Z="985.1915" Type="Flying" />
+    <Vector3 X="7479.346" Y="-1456.758" Z="986.5444" Type="Flying" />
+    <Vector3 X="7492.778" Y="-1444.377" Z="986.7801" Type="Flying" />
+    <Vector3 X="7504.542" Y="-1431.103" Z="986.3412" Type="Flying" />
+    <Vector3 X="7516.277" Y="-1417.091" Z="985.7189" Type="Flying" />
+    <Vector3 X="7527.841" Y="-1403.278" Z="985.1055" Type="Flying" />
+    <Vector3 X="7538.803" Y="-1389.362" Z="984.1505" Type="Flying" />
+    <Vector3 X="7549.294" Y="-1375.097" Z="982.9899" Type="Flying" />
+    <Vector3 X="7559.786" Y="-1360.833" Z="981.8293" Type="Flying" />
+    <Vector3 X="7570.443" Y="-1346.344" Z="980.6504" Type="Flying" />
+    <Vector3 X="7581.09" Y="-1331.869" Z="979.4726" Type="Flying" />
+    <Vector3 X="7591.747" Y="-1317.379" Z="978.2936" Type="Flying" />
+    <Vector3 X="7602.238" Y="-1303.115" Z="977.1331" Type="Flying" />
+    <Vector3 X="7612.729" Y="-1288.851" Z="975.9724" Type="Flying" />
+    <Vector3 X="7623.542" Y="-1274.151" Z="974.7764" Type="Flying" />
+    <Vector3 X="7634.354" Y="-1259.45" Z="973.5803" Type="Flying" />
+    <Vector3 X="7645.011" Y="-1244.961" Z="972.4013" Type="Flying" />
+    <Vector3 X="7655.823" Y="-1230.261" Z="971.2052" Type="Flying" />
+    <Vector3 X="7666.48" Y="-1215.771" Z="970.0263" Type="Flying" />
+    <Vector3 X="7677.697" Y="-1201.717" Z="969.2404" Type="Flying" />
+    <Vector3 X="7689.854" Y="-1188.416" Z="969.571" Type="Flying" />
+    <Vector3 X="7702.727" Y="-1175.473" Z="970.6138" Type="Flying" />
+    <Vector3 X="7715.909" Y="-1162.876" Z="972.0079" Type="Flying" />
+    <Vector3 X="7729.009" Y="-1150.579" Z="973.4577" Type="Flying" />
+    <Vector3 X="7742.168" Y="-1138.719" Z="974.4667" Type="Flying" />
+    <Vector3 X="7755.722" Y="-1126.897" Z="975.3328" Type="Flying" />
+    <Vector3 X="7770.017" Y="-1115.996" Z="976.5322" Type="Flying" />
+    <Vector3 X="7784.824" Y="-1106.483" Z="978.7465" Type="Flying" />
+    <Vector3 X="7800.049" Y="-1098.354" Z="982.7801" Type="Flying" />
+    <Vector3 X="7814.893" Y="-1091.712" Z="989.7991" Type="Flying" />
+    <Vector3 X="7829.254" Y="-1086.484" Z="999.8171" Type="Flying" />
+    <Vector3 X="7842.911" Y="-1082.08" Z="1010.722" Type="Flying" />
+    <Vector3 X="7856.273" Y="-1078.024" Z="1021.672" Type="Flying" />
+    <Vector3 X="7869.687" Y="-1073.946" Z="1032.549" Type="Flying" />
+    <Vector3 X="7883.248" Y="-1069.46" Z="1043.076" Type="Flying" />
+    <Vector3 X="7892.411" Y="-1066.694" Z="1049.874" Type="Flying" />
+    <Vector3 X="7906.648" Y="-1062.721" Z="1059.681" Type="Flying" />
+    <Vector3 X="7921.851" Y="-1058.145" Z="1067.596" Type="Flying" />
+    <Vector3 X="7937.215" Y="-1053.558" Z="1075.199" Type="Flying" />
+    <Vector3 X="7953.907" Y="-1048.471" Z="1080.323" Type="Flying" />
+    <Vector3 X="7970.635" Y="-1043.199" Z="1078.583" Type="Flying" />
+    <Vector3 X="7986.491" Y="-1037.859" Z="1071.99" Type="Flying" />
+    <Vector3 X="8000.355" Y="-1032.71" Z="1061.289" Type="Flying" />
+    <Vector3 X="8012.803" Y="-1028.104" Z="1049.511" Type="Flying" />
+    <Vector3 X="8025.213" Y="-1023.553" Z="1037.672" Type="Flying" />
+    <Vector3 X="8037.623" Y="-1019.002" Z="1025.833" Type="Flying" />
+    <Vector3 X="8043.931" Y="-1016.681" Z="1019.829" Type="Flying" />
+    <Vector3 X="8057.341" Y="-1010.701" Z="1009.458" Type="Flying" />
+    <Vector3 X="8071.43" Y="-1003.559" Z="1000.786" Type="Flying" />
+    <Vector3 X="8085.506" Y="-994.8736" Z="994.4645" Type="Flying" />
+    <Vector3 X="8100.483" Y="-985.0008" Z="990.9644" Type="Flying" />
+    <Vector3 X="8115.739" Y="-975.2762" Z="988.2929" Type="Flying" />
+    <Vector3 X="8130.775" Y="-965.6913" Z="985.6597" Type="Flying" />
+    <Vector3 X="8146.031" Y="-955.9668" Z="982.9882" Type="Flying" />
+    <Vector3 X="8161.286" Y="-946.2423" Z="980.3167" Type="Flying" />
+    <Vector3 X="8176.323" Y="-936.6573" Z="977.6835" Type="Flying" />
+    <Vector3 X="8191.125" Y="-927.2213" Z="975.0912" Type="Flying" />
+    <Vector3 X="8205.929" Y="-917.7853" Z="972.499" Type="Flying" />
+    <Vector3 X="8220.731" Y="-908.3492" Z="969.9067" Type="Flying" />
+    <Vector3 X="8235.514" Y="-898.8781" Z="967.33" Type="Flying" />
+    <Vector3 X="8249.473" Y="-888.1292" Z="965.2402" Type="Flying" />
+    <Vector3 X="8264.316" Y="-877.5046" Z="964.2397" Type="Flying" />
+    <Vector3 X="8277.046" Y="-864.9634" Z="963.3887" Type="Flying" />
+    <Vector3 X="8281.278" Y="-847.5997" Z="962.7422" Type="Flying" />
+    <Vector3 X="8282.966" Y="-829.6908" Z="961.7977" Type="Flying" />
+    <Vector3 X="8287.379" Y="-811.708" Z="960.6763" Type="Flying" />
+    <Vector3 X="8292.821" Y="-794.4763" Z="957.8912" Type="Flying" />
+    <Vector3 X="8297.868" Y="-776.8993" Z="954.6891" Type="Flying" />
+    <Vector3 X="8302.517" Y="-760.0565" Z="951.5924" Type="Flying" />
+    <Vector3 X="8309.055" Y="-743.5018" Z="947.5195" Type="Flying" />
+    <Vector3 X="8318.735" Y="-728.9856" Z="943.0577" Type="Flying" />
+    <Vector3 X="8331.548" Y="-716.9803" Z="939.2373" Type="Flying" />
+    <Vector3 X="8345.243" Y="-705.9194" Z="935.3688" Type="Flying" />
+    <Vector3 X="8358.89" Y="-694.434" Z="931.3349" Type="Flying" />
+    <Vector3 X="8370.558" Y="-681.53" Z="928.2678" Type="Flying" />
+    <Vector3 X="8375.879" Y="-665.5028" Z="926.7542" Type="Flying" />
+    <Vector3 X="8372.666" Y="-646.7737" Z="927.6923" Type="Flying" />
+    <Vector3 X="8364.471" Y="-630.6927" Z="930.1364" Type="Flying" />
+    <Vector3 X="8350.853" Y="-618.944" Z="932.7081" Type="Flying" />
+    <Vector3 X="8334.004" Y="-614.0859" Z="936.1752" Type="Flying" />
+    <Vector3 X="8316.484" Y="-616.2626" Z="940.6045" Type="Flying" />
+    <Vector3 X="8299.737" Y="-622.0669" Z="945.1074" Type="Flying" />
+    <Vector3 X="8283.289" Y="-627.8079" Z="949.7304" Type="Flying" />
+    <Vector3 X="8266.635" Y="-633.6207" Z="954.5559" Type="Flying" />
+    <Vector3 X="8249.727" Y="-639.5224" Z="959.4554" Type="Flying" />
+    <Vector3 X="8233.055" Y="-645.2885" Z="964.2775" Type="Flying" />
+    <Vector3 X="8216.561" Y="-650.3727" Z="968.3934" Type="Flying" />
+    <Vector3 X="8199.117" Y="-655.2781" Z="972.3845" Type="Flying" />
+    <Vector3 X="8181.639" Y="-655.5217" Z="975.0446" Type="Flying" />
+    <Vector3 X="8164.456" Y="-651.8523" Z="977.2822" Type="Flying" />
+    <Vector3 X="8148.488" Y="-644.5431" Z="979.3434" Type="Flying" />
+    <Vector3 X="8133.967" Y="-634.4058" Z="980.1429" Type="Flying" />
+    <Vector3 X="8119.985" Y="-622.9061" Z="977.8438" Type="Flying" />
+    <Vector3 X="8106.884" Y="-611.7104" Z="973.6222" Type="Flying" />
+    <Vector3 X="8093.977" Y="-599.7692" Z="969.6589" Type="Flying" />
+    <Vector3 X="8080.232" Y="-589.366" Z="965.7587" Type="Flying" />
+    <Vector3 X="8064.863" Y="-580.3174" Z="961.7227" Type="Flying" />
+    <Vector3 X="8048.919" Y="-572.3221" Z="957.6866" Type="Flying" />
+    <Vector3 X="8032.843" Y="-564.5735" Z="953.6959" Type="Flying" />
+    <Vector3 X="8016.763" Y="-557.3717" Z="949.8917" Type="Flying" />
+    <Vector3 X="8000.399" Y="-550.0995" Z="946.1832" Type="Flying" />
+    <Vector3 X="7984.333" Y="-542.7589" Z="942.5993" Type="Flying" />
+    <Vector3 X="7968.353" Y="-534.5053" Z="939.3075" Type="Flying" />
+    <Vector3 X="7953.101" Y="-525.3165" Z="936.5431" Type="Flying" />
+    <Vector3 X="7938.686" Y="-513.988" Z="933.973" Type="Flying" />
+    <Vector3 X="7927.123" Y="-500.4141" Z="931.5266" Type="Flying" />
+    <Vector3 X="7917.007" Y="-486.0547" Z="929.0341" Type="Flying" />
+    <Vector3 X="7908.037" Y="-470.7096" Z="926.0516" Type="Flying" />
+    <Vector3 X="7899.33" Y="-455.2524" Z="922.9732" Type="Flying" />
+    <Vector3 X="7892.095" Y="-439.1577" Z="919.3322" Type="Flying" />
+    <Vector3 X="7885.852" Y="-422.7408" Z="915.3655" Type="Flying" />
+    <Vector3 X="7881.532" Y="-405.5911" Z="912.1322" Type="Flying" />
+    <Vector3 X="7880.976" Y="-387.4991" Z="909.5895" Type="Flying" />
+    <Vector3 X="7881.322" Y="-369.6385" Z="907.1871" Type="Flying" />
+    <Vector3 X="7882.016" Y="-351.5117" Z="904.8911" Type="Flying" />
+    <Vector3 X="7882.515" Y="-333.8553" Z="903.2395" Type="Flying" />
+    <Vector3 X="7882.15" Y="-315.6251" Z="901.8403" Type="Flying" />
+    <Vector3 X="7881.498" Y="-297.4094" Z="900.4808" Type="Flying" />
+    <Vector3 X="7877.673" Y="-279.8187" Z="899.9252" Type="Flying" />
+    <Vector3 X="7873.293" Y="-262.337" Z="899.5949" Type="Flying" />
+    <Vector3 X="7868.776" Y="-244.6181" Z="899.3922" Type="Flying" />
+    <Vector3 X="7864.259" Y="-227.46" Z="899.6474" Type="Flying" />
+    <Vector3 X="7858.833" Y="-210.619" Z="900.3126" Type="Flying" />
+    <Vector3 X="7848.804" Y="-196.0845" Z="901.1949" Type="Flying" />
+    <Vector3 X="7835.313" Y="-184.6392" Z="902.0794" Type="Flying" />
+    <Vector3 X="7819.765" Y="-176.1866" Z="903.0499" Type="Flying" />
+    <Vector3 X="7802.515" Y="-169.3618" Z="902.9749" Type="Flying" />
+    <Vector3 X="7785.235" Y="-163.5422" Z="901.5642" Type="Flying" />
+    <Vector3 X="7768.465" Y="-157.9116" Z="900.1719" Type="Flying" />
+    <Vector3 X="7751.155" Y="-152.1979" Z="898.7022" Type="Flying" />
+    <Vector3 X="7734.522" Y="-145.3972" Z="897.5564" Type="Flying" />
+    <Vector3 X="7718.023" Y="-137.5261" Z="897.4" Type="Flying" />
+    <Vector3 X="7701.732" Y="-130.4899" Z="897.3629" Type="Flying" />
+    <Vector3 X="7684.924" Y="-122.6271" Z="897.3823" Type="Flying" />
+    <Vector3 X="7669.584" Y="-113.7854" Z="898.4958" Type="Flying" />
+    <Vector3 X="7653.976" Y="-105.4051" Z="899.1089" Type="Flying" />
+    <Vector3 X="7637.779" Y="-97.57636" Z="898.3083" Type="Flying" />
+    <Vector3 X="7621.762" Y="-89.33701" Z="897.7556" Type="Flying" />
+    <Vector3 X="7606.721" Y="-78.5257" Z="898.348" Type="Flying" />
+    <Vector3 X="7594.345" Y="-66.44254" Z="900.601" Type="Flying" />
+    <Vector3 X="7583.047" Y="-52.87677" Z="904.2138" Type="Flying" />
+    <Vector3 X="7573.3" Y="-38.78404" Z="908.7806" Type="Flying" />
+    <Vector3 X="7562.514" Y="-24.83084" Z="907.6254" Type="Flying" />
+    <Vector3 X="7552.539" Y="-10.81709" Z="903.3295" Type="Flying" />
+    <Vector3 X="7545.225" Y="4.439136" Z="898.1785" Type="Flying" />
+    <Vector3 X="7540.879" Y="21.4321" Z="894.1588" Type="Flying" />
+    <Vector3 X="7538.193" Y="39.07955" Z="891.7015" Type="Flying" />
+    <Vector3 X="7535.979" Y="56.87785" Z="889.9084" Type="Flying" />
+    <Vector3 X="7533.655" Y="74.62706" Z="887.9751" Type="Flying" />
+    <Vector3 X="7530.759" Y="92.18969" Z="885.1463" Type="Flying" />
+    <Vector3 X="7527.944" Y="109.2835" Z="881.3105" Type="Flying" />
+    <Vector3 X="7525.141" Y="126.3306" Z="877.2584" Type="Flying" />
+    <Vector3 X="7521.196" Y="143.0133" Z="872.7787" Type="Flying" />
+    <Vector3 X="7515.478" Y="159.7581" Z="868.168" Type="Flying" />
+    <Vector3 X="7509.661" Y="175.8156" Z="863.3513" Type="Flying" />
+    <Vector3 X="7503.57" Y="192.6158" Z="858.3113" Type="Flying" />
+    <Vector3 X="7496.171" Y="208.532" Z="853.2257" Type="Flying" />
+    <Vector3 X="7486.542" Y="222.8899" Z="848.243" Type="Flying" />
+    <Vector3 X="7472.903" Y="234.1289" Z="844.0086" Type="Flying" />
+    <Vector3 X="7456.885" Y="241.4147" Z="841.9921" Type="Flying" />
+    <Vector3 X="7439.182" Y="245.6447" Z="840.5753" Type="Flying" />
+    <Vector3 X="7421.231" Y="246.2825" Z="840.0932" Type="Flying" />
+    <Vector3 X="7403.623" Y="244.6133" Z="841.4504" Type="Flying" />
+    <Vector3 X="7386.073" Y="242.9703" Z="843.4491" Type="Flying" />
+    <Vector3 X="7368.308" Y="240.0873" Z="843.9859" Type="Flying" />
+    <Vector3 X="7350.537" Y="237.0927" Z="844.3634" Type="Flying" />
+    <Vector3 X="7332.979" Y="234.6192" Z="844.8893" Type="Flying" />
+    <Vector3 X="7315.093" Y="232.4658" Z="845.5026" Type="Flying" />
+    <Vector3 X="7297.33" Y="229.641" Z="846.1032" Type="Flying" />
+    <Vector3 X="7280.255" Y="223.9569" Z="846.559" Type="Flying" />
+    <Vector3 X="7264.755" Y="215.3973" Z="846.5362" Type="Flying" />
+    <Vector3 X="7251.513" Y="203.6445" Z="846.0516" Type="Flying" />
+    <Vector3 X="7240.254" Y="189.9731" Z="845.4579" Type="Flying" />
+    <Vector3 X="7232.714" Y="173.9995" Z="844.9009" Type="Flying" />
+    <Vector3 X="7230.907" Y="155.889" Z="844.3268" Type="Flying" />
+    <Vector3 X="7232.635" Y="137.9621" Z="843.7236" Type="Flying" />
+    <Vector3 X="7234.677" Y="119.7997" Z="843.0977" Type="Flying" />
+    <Vector3 X="7236.496" Y="102.1749" Z="842.1511" Type="Flying" />
+    <Vector3 X="7237.317" Y="84.48714" Z="841.1452" Type="Flying" />
+    <Vector3 X="7235.286" Y="66.88608" Z="840.8346" Type="Flying" />
+    <Vector3 X="7230.355" Y="49.88791" Z="841.4021" Type="Flying" />
+    <Vector3 X="7221.827" Y="34.38203" Z="842.4771" Type="Flying" />
+    <Vector3 X="7211.455" Y="19.76148" Z="844.0593" Type="Flying" />
+    <Vector3 X="7199.06" Y="6.898766" Z="846.2344" Type="Flying" />
+    <Vector3 X="7184.492" Y="-3.763595" Z="849.0559" Type="Flying" />
+    <Vector3 X="7168.7" Y="-11.72432" Z="852.4523" Type="Flying" />
+    <Vector3 X="7153.269" Y="-20.66526" Z="853.3077" Type="Flying" />
+    <Vector3 X="7138.818" Y="-31.29575" Z="851.7396" Type="Flying" />
+    <Vector3 X="7123.439" Y="-40.47775" Z="850.2919" Type="Flying" />
+    <Vector3 X="7107.016" Y="-47.15442" Z="849.7378" Type="Flying" />
+    <Vector3 X="7090.322" Y="-53.16201" Z="849.9823" Type="Flying" />
+    <Vector3 X="7073.543" Y="-58.92623" Z="849.7199" Type="Flying" />
+    <Vector3 X="7055.773" Y="-63.14677" Z="849.1541" Type="Flying" />
+    <Vector3 X="7037.682" Y="-65.71909" Z="848.5782" Type="Flying" />
+    <Vector3 X="7019.708" Y="-65.33295" Z="848.2416" Type="Flying" />
+    <Vector3 X="7002.697" Y="-60.81069" Z="849.7923" Type="Flying" />
+    <Vector3 X="6986.42" Y="-53.91088" Z="854.3988" Type="Flying" />
+    <Vector3 X="6971.076" Y="-47.06823" Z="860.9232" Type="Flying" />
+    <Vector3 X="6955.364" Y="-40.08636" Z="867.8871" Type="Flying" />
+    <Vector3 X="6940.542" Y="-33.49968" Z="874.4091" Type="Flying" />
+    <Vector3 X="6924.915" Y="-26.51395" Z="878.9528" Type="Flying" />
+    <Vector3 X="6908.667" Y="-18.26801" Z="879.8326" Type="Flying" />
+    <Vector3 X="6893.751" Y="-9.394989" Z="876.4587" Type="Flying" />
+    <Vector3 X="6879.904" Y="-1.641721" Z="868.6318" Type="Flying" />
+    <Vector3 X="6866.695" Y="4.250862" Z="857.8914" Type="Flying" />
+    <Vector3 X="6853.625" Y="9.673249" Z="846.3135" Type="Flying" />
+    <Vector3 X="6847.479" Y="12.43033" Z="839.9389" Type="Flying" />
+    <Vector3 X="6841.73" Y="15.08437" Z="833.5256" Type="Flying" />
+    <Vector3 X="6835.922" Y="17.77572" Z="826.8145" Type="Flying" />
+    <Vector3 X="6830.102" Y="20.47215" Z="820.0908" Type="Flying" />
+    <Vector3 X="6824.458" Y="23.08733" Z="813.5696" Type="Flying" />
+    <Vector3 X="6818.729" Y="25.64765" Z="807.1281" Type="Flying" />
+    <Vector3 X="6803.436" Y="26.86732" Z="798.3802" Type="Flying" />
+    <Vector3 X="6786.246" Y="21.74483" Z="795.1" Type="Flying" />
+    <Vector3 X="6770.141" Y="13.81866" Z="793.8422" Type="Flying" />
+    <Vector3 X="6755.93" Y="3.231524" Z="793.8789" Type="Flying" />
+    <Vector3 X="6744.46" Y="-10.20617" Z="794.332" Type="Flying" />
+    <Vector3 X="6737.457" Y="-26.44463" Z="795.0287" Type="Flying" />
+    <Vector3 X="6735.246" Y="-44.49683" Z="795.937" Type="Flying" />
+    <Vector3 X="6740.191" Y="-61.68451" Z="797.0686" Type="Flying" />
+    <Vector3 X="6749.996" Y="-76.37952" Z="798.1826" Type="Flying" />
+    <Vector3 X="6763.467" Y="-87.83363" Z="799.2825" Type="Flying" />
+    <Vector3 X="6777.692" Y="-98.37698" Z="800.3828" Type="Flying" />
+    <Vector3 X="6792.613" Y="-108.894" Z="799.4308" Type="Flying" />
+    <Vector3 X="6807.137" Y="-119.4751" Z="798.0323" Type="Flying" />
+    <Vector3 X="6821.953" Y="-129.6415" Z="797.4464" Type="Flying" />
+    <Vector3 X="6837.529" Y="-139.105" Z="798.8542" Type="Flying" />
+    <Vector3 X="6852.361" Y="-148.9945" Z="801.5066" Type="Flying" />
+    <Vector3 X="6866.612" Y="-159.1219" Z="804.5328" Type="Flying" />
+    <Vector3 X="6879.593" Y="-170.6171" Z="808.2707" Type="Flying" />
+    <Vector3 X="6892.472" Y="-182.5685" Z="812.2948" Type="Flying" />
+    <Vector3 X="6905.338" Y="-194.5084" Z="816.3149" Type="Flying" />
+    <Vector3 X="6918.243" Y="-206.4834" Z="820.1819" Type="Flying" />
+    <Vector3 X="6931.376" Y="-218.6703" Z="823.8477" Type="Flying" />
+    <Vector3 X="6944.422" Y="-230.7243" Z="826.8981" Type="Flying" />
+    <Vector3 X="6957.541" Y="-242.8309" Z="829.2599" Type="Flying" />
+    <Vector3 X="6970.535" Y="-255.2317" Z="830.7524" Type="Flying" />
+    <Vector3 X="6982.937" Y="-267.9064" Z="830.73" Type="Flying" />
+    <Vector3 X="6995.94" Y="-281.9115" Z="827.6949" Type="Flying" />
+    <Vector3 X="7007.938" Y="-294.8444" Z="823.9935" Type="Flying" />
+    <Vector3 X="7019.817" Y="-307.8922" Z="820.3138" Type="Flying" />
+    <Vector3 X="7031.225" Y="-321.3823" Z="816.8569" Type="Flying" />
+    <Vector3 X="7041.463" Y="-335.8564" Z="813.6142" Type="Flying" />
+    <Vector3 X="7050.767" Y="-350.5677" Z="810.1985" Type="Flying" />
+    <Vector3 X="7057.656" Y="-366.8601" Z="807.003" Type="Flying" />
+    <Vector3 X="7060.764" Y="-384.3809" Z="804.2972" Type="Flying" />
+    <Vector3 X="7061.642" Y="-402.0269" Z="800.7502" Type="Flying" />
+    <Vector3 X="7062.299" Y="-419.5987" Z="796.868" Type="Flying" />
+    <Vector3 X="7062.958" Y="-437.1905" Z="792.996" Type="Flying" />
+    <Vector3 X="7063.617" Y="-454.8191" Z="789.2945" Type="Flying" />
+    <Vector3 X="7064.275" Y="-472.4305" Z="785.5967" Type="Flying" />
+    <Vector3 X="7064.934" Y="-490.059" Z="781.8952" Type="Flying" />
+    <Vector3 X="7065.583" Y="-507.4137" Z="778.2513" Type="Flying" />
+    <Vector3 X="7066.193" Y="-524.7971" Z="774.7433" Type="Flying" />
+    <Vector3 X="7066.472" Y="-542.4212" Z="772.8156" Type="Flying" />
+    <Vector3 X="7066.72" Y="-560.1585" Z="772.3969" Type="Flying" />
+    <Vector3 X="7067.034" Y="-577.8977" Z="772.0718" Type="Flying" />
+    <Vector3 X="7067.354" Y="-595.8994" Z="771.7418" Type="Flying" />
+    <Vector3 X="7067.65" Y="-613.9188" Z="771.4286" Type="Flying" />
+    <Vector3 X="7066.276" Y="-632.1091" Z="772.473" Type="Flying" />
+    <Vector3 X="7063.788" Y="-649.9141" Z="773.6587" Type="Flying" />
+    <Vector3 X="7059.367" Y="-667.0701" Z="773.3864" Type="Flying" />
+    <Vector3 X="7051.177" Y="-682.6993" Z="772.2607" Type="Flying" />
+    <Vector3 X="7040.365" Y="-696.6694" Z="770.7159" Type="Flying" />
+    <Vector3 X="7028.418" Y="-709.6583" Z="768.8739" Type="Flying" />
+    <Vector3 X="7015.568" Y="-721.6543" Z="766.5153" Type="Flying" />
+    <Vector3 X="7002.193" Y="-732.9684" Z="763.7055" Type="Flying" />
+    <Vector3 X="6985.464" Y="-744.6545" Z="760.1146" Type="Flying" />
+    <Vector3 X="6969.607" Y="-752.858" Z="757.7178" Type="Flying" />
+    <Vector3 X="6952.861" Y="-759.3356" Z="756.4409" Type="Flying" />
+    <Vector3 X="6935.171" Y="-762.508" Z="755.7927" Type="Flying" />
+    <Vector3 X="6917.231" Y="-763.8254" Z="756.8162" Type="Flying" />
+    <Vector3 X="6899.547" Y="-764.6165" Z="757.98" Type="Flying" />
+    <Vector3 X="6881.815" Y="-765.265" Z="758.0285" Type="Flying" />
+    <Vector3 X="6864.085" Y="-765.9982" Z="757.8892" Type="Flying" />
+    <Vector3 X="6846.356" Y="-766.7313" Z="757.7498" Type="Flying" />
+    <Vector3 X="6828.627" Y="-767.4645" Z="757.6104" Type="Flying" />
+    <Vector3 X="6810.897" Y="-768.1977" Z="757.471" Type="Flying" />
+    <Vector3 X="6793.168" Y="-768.9308" Z="757.3316" Type="Flying" />
+    <Vector3 X="6775.444" Y="-769.7624" Z="757.1458" Type="Flying" />
+    <Vector3 X="6757.759" Y="-771.0544" Z="756.5493" Type="Flying" />
+    <Vector3 X="6740.177" Y="-772.7989" Z="754.9328" Type="Flying" />
+    <Vector3 X="6722.664" Y="-774.8654" Z="752.96" Type="Flying" />
+    <Vector3 X="6704.887" Y="-777.0334" Z="750.9117" Type="Flying" />
+    <Vector3 X="6687.545" Y="-779.7572" Z="748.3484" Type="Flying" />
+    <Vector3 X="6670.473" Y="-783.5736" Z="744.1219" Type="Flying" />
+    <Vector3 X="6653.741" Y="-787.5574" Z="738.7427" Type="Flying" />
+    <Vector3 X="6637.284" Y="-791.476" Z="731.8147" Type="Flying" />
+    <Vector3 X="6621.713" Y="-795.07" Z="723.4949" Type="Flying" />
+    <Vector3 X="6607.45" Y="-797.294" Z="713.6672" Type="Flying" />
+    <Vector3 X="6594.759" Y="-799.447" Z="704.4648" Type="Flying" />
+    <Vector3 X="6581.503" Y="-803.9468" Z="692.7064" Type="Flying" />
+    <Vector3 X="6569.22" Y="-809.2653" Z="681.0613" Type="Flying" />
+    <Vector3 X="6556.788" Y="-815.972" Z="669.4513" Type="Flying" />
+    <Vector3 X="6544.608" Y="-823.1934" Z="658.2983" Type="Flying" />
+    <Vector3 X="6533.005" Y="-831.3481" Z="647.2028" Type="Flying" />
+    <Vector3 X="6521.443" Y="-839.5069" Z="636.0386" Type="Flying" />
+    <Vector3 X="6509.643" Y="-847.6396" Z="624.6793" Type="Flying" />
+    <Vector3 X="6497.766" Y="-855.5181" Z="613.6483" Type="Flying" />
+    <Vector3 X="6485.166" Y="-863.0159" Z="602.726" Type="Flying" />
+    <Vector3 X="6472.427" Y="-867.8444" Z="591.3828" Type="Flying" />
+    <Vector3 X="6460.281" Y="-871.4342" Z="578.5779" Type="Flying" />
+    <Vector3 X="6454.871" Y="-872.884" Z="571.5408" Type="Flying" />
+    <Vector3 X="6449.681" Y="-874.2715" Z="564.3046" Type="Flying" />
+    <Vector3 X="6444.349" Y="-875.7143" Z="556.8321" Type="Flying" />
+    <Vector3 X="6439.148" Y="-877.3067" Z="550.0026" Type="Flying" />
+    <Vector3 X="6433.345" Y="-879.1552" Z="542.6404" Type="Flying" />
+    <Vector3 X="6427.844" Y="-880.9103" Z="536.1703" Type="Flying" />
+    <Vector3 X="6412.792" Y="-887.6846" Z="528.3249" Type="Flying" />
+    <Vector3 X="6399.664" Y="-894.7261" Z="520.8676" Type="Flying" />
+  </Vectors3>
+  <Npc>
+    <Npc>
+      <Position X="6126.48" Y="-1070.95" Z="403.103" />
+      <Entry>191521</Entry>
+      <Name>Briefkasten</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Mailbox</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Northrend</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="6097.56" Y="-1071.26" Z="404.4126" />
+      <Entry>29907</Entry>
+      <Name>Xark Bolzhammer</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Northrend</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="6124.42" Y="-1080.96" Z="402.5413" />
+      <Entry>29904</Entry>
+      <Name>Grinsender Slirk Messingknauf</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Northrend</ContinentId>
+    </Npc>
+  </Npc>
+  <BlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="8131.292" Y="-586.3588" Z="960.3408" />
+      <Radius>10</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment />
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="8203.243" Y="-1283.443" Z="998.2006" />
+      <Radius>10</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment />
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="7257.163" Y="-2856.419" Z="782.5359" />
+      <Radius>3</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment />
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="7426.148" Y="-2882.375" Z="801.5309" />
+      <Radius>15</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment />
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="6710.553" Y="-671.987" Z="913.1454" />
+      <Radius>10</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment />
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="7585.272" Y="210.5629" Z="839.1165" />
+      <Radius>5</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment>Die Sturmgipfel &gt; </Comment>
+    </GathererBlackListRadius>
+    <GathererBlackListRadius>
+      <Position X="6900.002" Y="-602.6968" Z="921.7248" />
+      <Radius>10</Radius>
+      <Continent>Northrend</Continent>
+      <TypeArea>POLYAREA_BIGDANGER</TypeArea>
+      <Comment>Die Sturmgipfel &gt; Bors Atem</Comment>
+    </GathererBlackListRadius>
+  </BlackListRadius>
+  <GatherEntry />
+  <NotLoop>false</NotLoop>
+</GathererProfile>

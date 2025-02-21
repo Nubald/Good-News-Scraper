@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName> Blood&amp;Unholy DK with heal</FightClassName>
+    <Range>10</Range>
+    <Pet>true</Pet>
+    <PetCallSpellName>Rise Dead</PetCallSpellName>
+    <PetReviveSpellName> RiseDead</PetReviveSpellName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Horn of Winter</SpellName>
+      <Priority>16</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Bone Shield</SpellName>
+      <Priority>15</Priority>
+      <IsBuff>true</IsBuff>
+      <Timer>160</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Icebound Fortitude</SpellName>
+      <Priority>14</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Death Grip</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mind Freeze</SpellName>
+      <Priority>12</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>8</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetInMove</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Chains of Ice</SpellName>
+      <Priority>11</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Rune Tap</SpellName>
+      <Priority>10</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>RunicPower</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>60</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Summon Gargoyle</SpellName>
+      <Priority>9</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>RunicPower</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Bigger</Type>
+            <Value>40</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Death Coil</SpellName>
+      <Priority>8</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Plague Strike</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Blood Strike</SpellName>
+      <Priority>6</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Scourge Strike</SpellName>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Lifeblood</SpellName>
+      <Priority>4</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Icy Touch</SpellName>
+      <Priority>3</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Death Strike</SpellName>
+      <Priority>2</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Obliterate</SpellName>
+      <Priority>1</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

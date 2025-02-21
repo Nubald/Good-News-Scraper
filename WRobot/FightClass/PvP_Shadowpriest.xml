@@ -1,0 +1,468 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>PvP Shadowpriest</FightClassName>
+    <Range>28</Range>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Inner fire</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Inner Fire</SpellName>
+      <Priority>27</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Vampiric embrace</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vampiric Embrace</SpellName>
+      <Priority>26</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadowform</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>RunMacroText("/cast Shadowform")</SpellName>
+      <Priority>25</Priority>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>RunMacroText("/cast Dispersion")</SpellName>
+      <Priority>24</Priority>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>RunMacroText("/cast Dispersion")</SpellName>
+      <Priority>23</Priority>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine spirit</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of spirit</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Divine spirit</SpellName>
+      <Priority>22</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow protection</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of shadow protection</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow protection</SpellName>
+      <Priority>21</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>power word: fortitude</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Prayer of fortitude</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Power word: fortitude</SpellName>
+      <Priority>20</Priority>
+      <IsBuff>true</IsBuff>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Vampiric touch</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Vampiric touch</SpellName>
+      <Priority>19</Priority>
+      <Timer>1500</Timer>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Word: Pain</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadow Word: Pain</SpellName>
+      <Priority>18</Priority>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Devouring Plague</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Devouring Plague</SpellName>
+      <Priority>17</Priority>
+      <WaitDuringCasting>false</WaitDuringCasting>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Devouring plague</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mind Blast</SpellName>
+      <Priority>16</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetInCast</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Silence</SpellName>
+      <Priority>15</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Devouring plague</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>TargetBuffCastedByMe</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Shadow Word: Pain</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mind flay</SpellName>
+      <Priority>14</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Divine shield</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mass dispel</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetBuff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Ice block</Name>
+            <Need>true</Need>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Mass dispel</SpellName>
+      <Priority>12</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Weakened Soul</Name>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>100</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Power Word: Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Power Word: Shield</SpellName>
+      <Priority>11</Priority>
+      <IsBuff>true</IsBuff>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>90</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Prayer of mending</SpellName>
+      <Priority>10</Priority>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>90</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Renew</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Renew</SpellName>
+      <Priority>9</Priority>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>8</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic Scream</SpellName>
+      <Priority>8</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetDistance</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>7</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Psychic horror</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>95</Value>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>MeInCombat</ContionType>
+          <Param xsi:type="FightClassConditionBool" />
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Flash heal</SpellName>
+      <Priority>6</Priority>
+      <CombatOnly>false</CombatOnly>
+      <CastIfMounted>true</CastIfMounted>
+      <CastOnSelf>true</CastOnSelf>
+      <CastOn>player</CastOn>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>LuaScript</ContionType>
+          <Param xsi:type="FightClassConditionLua">
+            <LuaScript>dispel = "no"
+dispelspell = "Dispel Magic"
+
+ccs = {
+"Polymorph",
+"Fear",
+"Howl of Terror",
+"Psychic Scream",
+"Seduction",
+"Hammer of Justice",
+"Immolate",
+"Flame Shock",
+"Repentance",
+}
+
+for i=1, GetNumRaidMembers() do
+	for j=1, #ccs do
+		if UnitExists("raid"..i)
+		and UnitDebuff("raid"..i,ccs[j])
+		and IsSpellInRange(dispelspell,"raid"..i) == 1
+		and not UnitIsUnit("raid"..i,"player")
+		then
+		dispel = "yes"
+		dispeltarget = "raid"..i
+		print("|cFF25DCE0Dispel Friends:|r Dispelling "..ccs[j].." from "..UnitName("raid"..i))
+
+		end
+	end
+end</LuaScript>
+            <VarRet>dispel</VarRet>
+            <ValueRet>yes</ValueRet>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>-- Dispel CC (Friends)
+CastSpellByName(dispelspell,dispeltarget)</SpellName>
+      <CombatOnly>false</CombatOnly>
+      <AddToSettings>true</AddToSettings>
+      <AddToSettingsActiveByDefault>true</AddToSettingsActiveByDefault>
+      <AddToSettingsName>Dispel CC to Friends</AddToSettingsName>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>MeIsStunned</ContionType>
+          <Param xsi:type="FightClassConditionBool">
+            <Value>true</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Every man for himself</SpellName>
+      <Priority>4</Priority>
+      <CastIfMounted>true</CastIfMounted>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>TargetHealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>15</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>RunMacroText("/cast Shadow Word: Death")</SpellName>
+      <Priority>3</Priority>
+      <NotSpellIsLuaScript>true</NotSpellIsLuaScript>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Shadowfiend</SpellName>
+      <Priority>2</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>ManaPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>SmallerOrEqual</Type>
+            <Value>30</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Inner focus</SpellName>
+      <Priority>1</Priority>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

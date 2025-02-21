@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<FightClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FightClassGeneralSettings>
+    <FightClassName>Fight config name</FightClassName>
+    <FramePerSecond>25</FramePerSecond>
+  </FightClassGeneralSettings>
+  <FightClassSpells>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>1</Number>
+            <Type>Bigger</Type>
+            <Radius>10</Radius>
+          </Param>
+        </FightClassCondition>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Strength of Earth</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Call of the Elements</SpellName>
+      <Priority>14</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>UnitAttackPlayerNearTarget</ContionType>
+          <Param xsi:type="FightClassConditionUnitNear">
+            <Number>1</Number>
+            <Type>Bigger</Type>
+            <Radius>10</Radius>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Fire Nova</SpellName>
+      <Priority>13</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Windfury Weapon</SpellName>
+      <Priority>12</Priority>
+      <CombatOnly>false</CombatOnly>
+      <Timer>600000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Flametongue Weapon</SpellName>
+      <Priority>11</Priority>
+      <CombatOnly>false</CombatOnly>
+      <Timer>720000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Bloodlust</SpellName>
+      <Priority>10</Priority>
+      <Timer>610000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Feral Spirit</SpellName>
+      <Priority>9</Priority>
+      <Timer>190000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Blood Fury</SpellName>
+      <Priority>8</Priority>
+      <Timer>120000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>HealthPercent</ContionType>
+          <Param xsi:type="FightClassConditionNumber">
+            <Type>Smaller</Type>
+            <Value>50</Value>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lesser Healing Wave</SpellName>
+      <Priority>7</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Shamanistic Rage</SpellName>
+      <Priority>6</Priority>
+      <Timer>60000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>Buff</ContionType>
+          <Param xsi:type="FightClassConditionStringBool">
+            <Name>Water Shield</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Water Shield</SpellName>
+      <CombatOnly>false</CombatOnly>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions>
+        <FightClassCondition>
+          <ContionType>BuffStack</ContionType>
+          <Param xsi:type="FightClassConditionBuffStack">
+            <Number>5</Number>
+            <Name>Maelstrom Weapon</Name>
+          </Param>
+        </FightClassCondition>
+      </FightClassConditions>
+      <SpellName>Lightning Bolt</SpellName>
+      <Priority>4</Priority>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Stormstrike</SpellName>
+      <Priority>3</Priority>
+      <Timer>8000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Earth Shock</SpellName>
+      <Priority>2</Priority>
+      <Timer>6000</Timer>
+    </FightClassSpell>
+    <FightClassSpell>
+      <FightClassConditions />
+      <SpellName>Lava Lash</SpellName>
+      <Priority>1</Priority>
+      <Timer>6000</Timer>
+    </FightClassSpell>
+  </FightClassSpells>
+</FightClass>

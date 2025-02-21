@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good News Archives</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Good News Archives</h1>
+        <nav>
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="animals">Animals</button>
+            <button class="category-btn" data-category="people">People</button>
+            <button class="category-btn" data-category="science">Science</button>
+            <button class="category-btn" data-category="environment">Environment</button>
+            <button class="category-btn" data-category="funny">Funny</button>
+            <button class="category-btn" data-category="inspiring">Inspiring</button>
+        </nav>
+    </header>
+
+    <main id="news-container">
+        <!-- News articles will be loaded here -->
+        <div class="loading">Loading news...</div>
+    </main>
+
+    <template id="article-template">
+        <article class="news-article">
+            <div class="article-image">
+                <img src="" alt="Article image">
+            </div>
+            <div class="article-content">
+                <span class="article-category"></span>
+                <h2 class="article-title"></h2>
+                <div class="article-meta">
+                    <span class="article-date"></span>
+                    <span class="article-source"></span>
+                </div>
+                <a href="" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+            </div>
+        </article>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

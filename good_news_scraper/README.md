@@ -57,7 +57,7 @@ good_news_scraper/
 ├── styles.css        # Website styling
 ├── script.js         # Website functionality
 ├── requirements.txt  # Python dependencies
-├── credentials.json  # Google Drive API credentials (you need to create this)
+# ├── credentials.json  # Google Drive API credentials
 └── data/            
     └── news.json     # Scraped news data
 ```
